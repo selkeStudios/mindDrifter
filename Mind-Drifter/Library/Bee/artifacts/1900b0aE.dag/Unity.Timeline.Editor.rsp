@@ -118,12 +118,12 @@
 -define:TIMELINE_FRAMEACCURATE
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"/Users/scottselke/Documents/Mind-Drifter/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/log4netPlastic.dll"
--r:"/Users/scottselke/Documents/Mind-Drifter/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
--r:"/Users/scottselke/Documents/Mind-Drifter/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
--r:"/Users/scottselke/Documents/Mind-Drifter/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll"
--r:"/Users/scottselke/Documents/Mind-Drifter/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
--r:"/Users/scottselke/Documents/Mind-Drifter/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"/Users/scottselke/Documents/GitHub/mindDrifter/Mind-Drifter/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/log4netPlastic.dll"
+-r:"/Users/scottselke/Documents/GitHub/mindDrifter/Mind-Drifter/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
+-r:"/Users/scottselke/Documents/GitHub/mindDrifter/Mind-Drifter/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
+-r:"/Users/scottselke/Documents/GitHub/mindDrifter/Mind-Drifter/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll"
+-r:"/Users/scottselke/Documents/GitHub/mindDrifter/Mind-Drifter/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"/Users/scottselke/Documents/GitHub/mindDrifter/Mind-Drifter/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"/Users/scottselke/Documents/Unity Editors/2021.3.9f1/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
 -r:"/Users/scottselke/Documents/Unity Editors/2021.3.9f1/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"/Users/scottselke/Documents/Unity Editors/2021.3.9f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
