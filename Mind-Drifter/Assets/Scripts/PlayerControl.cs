@@ -123,13 +123,6 @@ public class PlayerControl : MonoBehaviour
             TaskComplete.Play();
         }
 
-
-
-
-
-
-
-
         if (collision.gameObject.CompareTag("Player2Door") && gameObject.CompareTag("Player2"))
         {
             transform.position = new Vector3(-14, 0, -160);
@@ -140,7 +133,6 @@ public class PlayerControl : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-
     }
 
     /// <summary>
