@@ -75,10 +75,14 @@ public class CreationAbility : MonoBehaviour
         {
             RaycastHit hit;
 
-            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit) && hit.distance <= 1 && hit.collider.tag == "CreativeObject")
+            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit) && hit.distance <= 5 && hit.collider.tag == "CreativeObject")
             {
                 HoldObj(hit.collider.gameObject);
             }
+
+            Debug.DrawRay(cam.transform.position, cam.transform.forward * 5, Color.red, 5);
+
+            print(hit.collider.tag);
         }
         else if (Input.GetKeyDown(hold))
         {
