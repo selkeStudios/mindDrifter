@@ -20,10 +20,12 @@ public class CreationAbility : MonoBehaviour
     public KeyCode scaleY = KeyCode.LeftAlt;
     public KeyCode scaleZ = KeyCode.LeftShift;
 
+    //Held object data
     public GameObject obj;
     public Rigidbody objRB;
     public Vector3 objPos = new Vector3(2, 0, 0);
-    public Vector3 objScale = new Vector3(1, 1, 1);
+    public Vector3 objScale = Vector3.one;
+    public Quaternion objRot = Quaternion.identity;
 
     public bool objHeld;
 
@@ -33,7 +35,7 @@ public class CreationAbility : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        objRot = Quaternion.Euler(0, 0, 0);
     }
 
     // Update is called once per frame
@@ -48,7 +50,8 @@ public class CreationAbility : MonoBehaviour
         //Rotate object left and right
         if (objHeld && Input.mouseScrollDelta.y != 0)
         {
-            obj.transform.rotation = Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens + obj.transform.rotation.y, 0);
+            objRot *= Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens + obj.transform.rotation.y, 0);
+            obj.transform.rotation = objRot;
         }
 
         //Scale object
@@ -71,16 +74,20 @@ public class CreationAbility : MonoBehaviour
                 HoldObj(hit.collider.gameObject);
             }
         }
-        else if (objHeld)
+        else if (Input.GetKeyDown(hold))
         {
             obj.transform.parent = null;
 
             objRB.constraints = RigidbodyConstraints.None;
 
             objHeld = false;
+
+            objScale = Vector3.one;
+            objRot = Quaternion.identity;
         }
     }
 
+    //Does the work to "hold an object"
     void HoldObj(GameObject obj_)
     {
         obj = obj_.gameObject;
@@ -88,13 +95,14 @@ public class CreationAbility : MonoBehaviour
         obj.transform.SetParent(cam.transform);
 
         obj.transform.position = objPos;
-        obj.transform.rotation = Quaternion.Euler(0, 0, 0);
+        obj.transform.rotation = objRot;
 
         objRB.constraints = RigidbodyConstraints.FreezePosition;
 
         objHeld = true;
     }
 
+    //Scales the object based on what dimensions a player is trying to scale
     void ScaleObj(KeyCode key)
     {
         int dir;
@@ -148,9 +156,11 @@ public class CreationAbility : MonoBehaviour
             deltaScale = Vector3.one * dir * scaleSens * Time.deltaTime;
         }
 
-        obj.transform.localScale += deltaScale;
+        objScale += deltaScale;
+        obj.transform.localScale = objScale;
     }
 
+    //Changes the item desired (held or palette)
     void SwapObject()
     {
 
