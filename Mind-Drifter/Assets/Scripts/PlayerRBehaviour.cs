@@ -88,13 +88,10 @@ public class PlayerRBehaviour : MonoBehaviour
         hori = (Input.GetKey(KeyCode.D) ? 1 : 0) * 1 + (Input.GetKey(KeyCode.A) ? 1 : 0) * -1;
 
 
-        if (!paused)
-        {
-            moveDir = (transform.right * hori + transform.forward * vert).normalized;
-            CameraMovement();
-            Crouch();
-            Jump();
-        }
+        moveDir = (transform.right * hori + transform.forward * vert).normalized;
+        CameraMovement();
+        Crouch();
+        Jump();
     }
 
     /// <summary>
@@ -111,7 +108,7 @@ public class PlayerRBehaviour : MonoBehaviour
             coll.material = slip;
         }
 
-        if (moveDir != Vector3.zero && !paused)
+        if (moveDir != Vector3.zero)
         {
             Movement();
         }

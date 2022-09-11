@@ -42,7 +42,7 @@ public class CreationAbility : MonoBehaviour
     void Update()
     {
         //Create object and hold it differently than "usual"
-        if (Input.GetKeyDown(create))
+        if (Input.GetKeyDown(create) && !objHeld)
         {
             HoldObj(Instantiate(shapes[selectedShape]));
         }

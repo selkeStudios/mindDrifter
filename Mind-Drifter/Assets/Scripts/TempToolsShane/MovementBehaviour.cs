@@ -50,8 +50,8 @@ public class MovementBehaviour : MonoBehaviour
     /// </summary>
     void Update()
     {
-        vert = (Input.GetKey(KeyCode.W) ? 1 : 0) * 1 + (Input.GetKey(KeyCode.A) ? 1 : 0) * -1;
-        hori = (Input.GetKey(KeyCode.D) ? 1 : 0) * 1 + (Input.GetKey(KeyCode.S) ? 1 : 0) * -1;
+        vert = (Input.GetKey(KeyCode.W) ? 1 : 0) * 1 + (Input.GetKey(KeyCode.S) ? 1 : 0) * -1;
+        hori = (Input.GetKey(KeyCode.D) ? 1 : 0) * 1 + (Input.GetKey(KeyCode.A) ? 1 : 0) * -1;
 
 
         moveDir = (transform.right * hori + transform.forward * vert).normalized;
