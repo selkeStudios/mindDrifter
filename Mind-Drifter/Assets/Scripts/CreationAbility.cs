@@ -54,7 +54,7 @@ public class CreationAbility : MonoBehaviour
             obj.transform.localRotation *= objRot;
         }
 
-        //
+        //Changes the selected object, held or non-existent (yet)
         if (Input.GetKeyDown(shapeChange))
         {
             SwapObject();
@@ -79,10 +79,6 @@ public class CreationAbility : MonoBehaviour
             {
                 HoldObj(hit.collider.gameObject);
             }
-
-            Debug.DrawRay(cam.transform.position, cam.transform.forward * 5, Color.red, 5);
-
-            print(hit.collider.tag);
         }
         else if (Input.GetKeyDown(hold))
         {
