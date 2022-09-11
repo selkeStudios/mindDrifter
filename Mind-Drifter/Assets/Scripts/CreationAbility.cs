@@ -54,6 +54,12 @@ public class CreationAbility : MonoBehaviour
             obj.transform.rotation = objRot;
         }
 
+        //
+        if (Input.GetKeyDown(shapeChange))
+        {
+            SwapObject();
+        }
+
         //Scale object
         if (Input.GetKey(scaleUp) && !Input.GetKey(scaleDown))
         {
@@ -163,6 +169,20 @@ public class CreationAbility : MonoBehaviour
     //Changes the item desired (held or palette)
     void SwapObject()
     {
+        if (selectedShape < shapes.Length)
+        {
+            selectedShape++;
+        }
+        else
+        {
+            selectedShape = 0;
+        }
 
+        if (objHeld)
+        {
+            Destroy(obj);
+
+            HoldObj(Instantiate(shapes[selectedShape]));
+        }
     }
 }
