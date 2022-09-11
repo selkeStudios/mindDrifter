@@ -48,10 +48,10 @@ public class CreationAbility : MonoBehaviour
         }
 
         //Rotate object left and right
-        if (objHeld && Input.mouseScrollDelta.y != 0)
+        if (objHeld)
         {
-            objRot *= Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens + obj.transform.rotation.y, 0);
-            obj.transform.rotation = objRot;
+            objRot = Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens, 0);
+            obj.transform.localRotation *= objRot;
         }
 
         //
@@ -100,10 +100,10 @@ public class CreationAbility : MonoBehaviour
         objRB = obj.GetComponent<Rigidbody>();
         obj.transform.SetParent(cam.transform);
 
-        obj.transform.position = objPos;
-        obj.transform.rotation = objRot;
+        obj.transform.localPosition = objPos;
+        obj.transform.localRotation = objRot;
 
-        objRB.constraints = RigidbodyConstraints.FreezePosition;
+        objRB.constraints = RigidbodyConstraints.FreezeAll;
 
         objHeld = true;
     }
@@ -169,7 +169,7 @@ public class CreationAbility : MonoBehaviour
     //Changes the item desired (held or palette)
     void SwapObject()
     {
-        if (selectedShape < shapes.Length)
+        if (selectedShape < shapes.Length - 1)
         {
             selectedShape++;
         }

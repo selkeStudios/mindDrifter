@@ -351,6 +351,10 @@
 "Assets/Scripts/P2Spherebehaviour.cs"
 "Assets/Scripts/Pickup.cs"
 "Assets/Scripts/PlayerControl.cs"
+"Assets/Scripts/PlayerRBehaviour.cs"
+"Assets/Scripts/TempToolsShane/CollisionBehaviour.cs"
+"Assets/Scripts/TempToolsShane/JumpBehaviour.cs"
+"Assets/Scripts/TempToolsShane/MovementBehaviour.cs"
 -langversion:9.0
 
 /deterministic
