@@ -212,9 +212,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -25.389997, y: 14.56, z: 12.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 71
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &33178822
 GameObject:
@@ -245,6 +246,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -18.21, y: 122.41, z: -304.96}
   m_LocalScale: {x: 3.8368, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 35
@@ -273,6 +275,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -340,6 +343,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -21.21, y: 127.04, z: -225.08}
   m_LocalScale: {x: 5, y: 1, z: 11.127496}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 23
@@ -368,6 +372,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -432,6 +437,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -223.75575, y: -133.45743, z: -317.12817}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1709028681}
   - {fileID: 733801414}
@@ -484,6 +490,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -532,6 +539,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.5341, y: 6.8038, z: -23.35}
   m_LocalScale: {x: 49.301193, y: 1, z: 20.829626}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 46
@@ -625,9 +633,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.75, y: 26.68, z: -54.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 74
+  m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &90809290
 GameObject:
@@ -673,6 +682,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -721,9 +731,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.755, y: -0.69, z: -168.3}
   m_LocalScale: {x: 1, y: 0.73675, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 88
+  m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &119517123
 GameObject:
@@ -754,6 +765,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -7.73, y: 117.8329, z: -209.16}
   m_LocalScale: {x: 25.3225, y: 1, z: 7.5456}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 19
@@ -782,6 +794,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -909,9 +922,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.1, y: 26.68, z: -75.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 76
+  m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &147603837
 GameObject:
@@ -942,6 +956,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 23, y: 126.3401, z: -306.8134}
   m_LocalScale: {x: 33.825405, y: 1, z: 16.964838}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 41
@@ -970,6 +985,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1051,6 +1067,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1099,6 +1116,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.8, y: 0.9623, z: -61.3537}
   m_LocalScale: {x: 0.35, y: 60.525406, z: 179.8268}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 40
@@ -1113,6 +1131,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -1211,6 +1233,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1259,9 +1282,10 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 86.3, y: 13.83, z: -169.41}
   m_LocalScale: {x: 104.70583, y: 1, z: 33.265263}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 86
+  m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1 &190326455
 GameObject:
@@ -1386,6 +1410,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 634414763}
   m_RootOrder: 0
@@ -1434,6 +1459,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1482,6 +1508,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.86, y: -1.3845, z: -43}
   m_LocalScale: {x: 35, y: 1.2505275, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 52
@@ -1545,6 +1572,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1593,9 +1621,10 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 59.3854, y: 13.78, z: -116.74}
   m_LocalScale: {x: 54.93514, y: 1, z: 33.265263}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 87
+  m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &276387226
 PrefabInstance:
@@ -1607,6 +1636,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -1687,6 +1720,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -51.29, y: 118.14, z: -162.52876}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 27
@@ -1715,6 +1749,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1763,6 +1798,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -1832,7 +1871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &302053261
 Transform:
   m_ObjectHideFlags: 0
@@ -1841,11 +1880,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302053260}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9.02, y: 7.6399994, z: -55.3}
+  m_LocalPosition: {x: 45.027885, y: 15.901135, z: -86.43136}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 60
+  m_Father: {fileID: 712634587}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &302053262
 BoxCollider:
@@ -1871,6 +1911,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1952,6 +1993,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2000,6 +2042,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.35502625, y: 126.47, z: -141.114}
   m_LocalScale: {x: 5, y: 0.5, z: 7.0902534}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 10
@@ -2031,6 +2074,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.185554, y: -17.322056, z: -37.09158}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -2054,6 +2098,10 @@ MonoBehaviour:
   darkwallroof: {fileID: 1588937429}
   Player1Cam: {fileID: 963194225}
   Player2Cam: {fileID: 1146214006}
+  player:
+  - {fileID: 963194225}
+  - {fileID: 1146214006}
+  activePlayer: 0
   InvisWalls: []
   arrowWall: {fileID: 7761906457562879345, guid: 61a83ee9c1847c94eaa3a0269db035fc, type: 3}
   mainArrowWall: {fileID: 1582364620}
@@ -2157,9 +2205,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.79, y: 14.56, z: -10.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 68
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &368422949
 GameObject:
@@ -2190,6 +2239,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -21.1608, y: 124.5, z: -217.95}
   m_LocalScale: {x: 5, y: 1, z: 11.127496}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 24
@@ -2218,6 +2268,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2299,6 +2350,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2347,6 +2399,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.345027, y: 121.87, z: -130.09877}
   m_LocalScale: {x: 5, y: 0.5, z: 5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 7
@@ -2380,6 +2433,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -47.93, y: 115.7302, z: -274.99}
   m_LocalScale: {x: 5, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 29
@@ -2408,6 +2462,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2475,6 +2530,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -21.1608, y: 124.5, z: -223.05}
   m_LocalScale: {x: 5, y: 1, z: 11.127496}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 22
@@ -2503,6 +2559,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2551,6 +2608,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -2637,6 +2698,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 963194226}
   m_RootOrder: 0
@@ -2785,6 +2847,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2833,6 +2896,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -35.325027, y: 123.34627, z: -170.42877}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 15
@@ -2847,6 +2911,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -2945,6 +3013,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2993,9 +3062,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 26.5838, y: -2.83, z: -168.3399}
   m_LocalScale: {x: 119.8244, y: 1, z: 106.722496}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 64
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &498863987
 PrefabInstance:
@@ -3007,6 +3077,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -3087,6 +3161,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -49.24, y: 123.34627, z: -191.59}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 17
@@ -3115,6 +3190,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3242,9 +3318,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.75, y: 26.68, z: -75.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 75
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &569901072
 PrefabInstance:
@@ -3256,6 +3333,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -3321,6 +3402,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -3461,9 +3546,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -26.64, y: 28.66, z: -53.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 79
+  m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &602412159
 GameObject:
@@ -3508,6 +3594,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3556,6 +3643,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.0750275, y: 120.25627, z: -130.09877}
   m_LocalScale: {x: 5, y: 0.5, z: 5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 6
@@ -3570,6 +3658,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -3635,6 +3727,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -3729,6 +3825,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3777,6 +3874,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.83, z: -45.54}
   m_LocalScale: {x: 66.69, y: 1, z: 47.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 45
@@ -3807,11 +3905,12 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 320, y: 240, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 190326457}
   - {fileID: 1964431960}
   m_Father: {fileID: 0}
-  m_RootOrder: 91
+  m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &642916314
 GameObject:
@@ -3902,9 +4001,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.68, y: 14.56, z: -10.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 72
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643145708
 GameObject:
@@ -3935,6 +4035,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -18.21, y: 118.56, z: -294.98}
   m_LocalScale: {x: 3.8368, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 33
@@ -3963,6 +4064,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4011,6 +4113,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -4110,6 +4216,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4158,9 +4265,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 60.59, y: -1.12, z: -184.28}
   m_LocalScale: {x: 1, y: 0.73675, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 90
+  m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -4251,6 +4359,7 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 38
@@ -4298,6 +4407,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4346,10 +4456,44 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: -32.2, y: 20, z: -96.5689}
   m_LocalScale: {x: 250.22276, y: 1, z: 47.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!1 &712634586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 712634587}
+  m_Layer: 0
+  m_Name: HiddenPlatformHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &712634587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712634586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -54.047886, y: -8.261136, z: 31.131361}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2058741455}
+  - {fileID: 302053261}
+  m_Father: {fileID: 0}
+  m_RootOrder: 59
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &717606548
 GameObject:
   m_ObjectHideFlags: 0
@@ -4393,6 +4537,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4441,6 +4586,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -48.235027, y: 119.95627, z: -162.52876}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 12
@@ -4474,6 +4620,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 203.37575, y: 136.03743, z: 315.20816}
   m_LocalScale: {x: 15, y: 25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 88776092}
   m_RootOrder: 1
@@ -4502,6 +4649,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4550,6 +4698,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -4694,9 +4846,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -25.39, y: 14.56, z: -10.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 70
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &796380878
 GameObject:
@@ -4741,6 +4894,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4789,6 +4943,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 20, z: 24.5}
   m_LocalScale: {x: 66.69, y: 1, z: 47.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 42
@@ -4836,6 +4991,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4884,6 +5040,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.83, z: -92.5}
   m_LocalScale: {x: 66.69, y: 1, z: 47.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 55
@@ -4898,6 +5055,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -4959,6 +5120,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -5053,6 +5218,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5101,6 +5267,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.68, y: 8.79, z: -11.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 48
@@ -5134,6 +5301,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -18.21, y: 126.74, z: -318.67}
   m_LocalScale: {x: 3.8368, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 38
@@ -5162,6 +5330,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5210,6 +5379,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -5294,6 +5467,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 1, y: 126.3786, z: -306.8134}
   m_LocalScale: {x: 33.825405, y: 1, z: 16.8885}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 40
@@ -5322,6 +5496,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5403,6 +5578,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5451,9 +5627,10 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 26.8909, y: 14.069, z: -222.23}
   m_LocalScale: {x: 120.166306, y: 1, z: 34.10192}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 83
+  m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &890003791
 GameObject:
@@ -5481,10 +5658,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.5, y: 18.22, z: -173.48155}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 996282994}
   m_Father: {fileID: 0}
-  m_RootOrder: 65
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903840516
 GameObject:
@@ -5515,6 +5693,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 49.802, y: 115.7345, z: -323.69}
   m_LocalScale: {x: 5.251, y: 1, z: 5.5359}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 30
@@ -5543,6 +5722,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5593,7 +5773,7 @@ GameObject:
   - component: {fileID: 913093725}
   - component: {fileID: 913093724}
   - component: {fileID: 913093723}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Glass walls
   m_TagString: Invisible Walls
   m_Icon: {fileID: 0}
@@ -5624,6 +5804,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5672,9 +5853,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.3886, y: 16.197, z: -151.28}
   m_LocalScale: {x: 32.057392, y: 27.650131, z: 0.13433325}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 82
+  m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &921136631
 GameObject:
@@ -5719,6 +5901,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5767,6 +5950,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 31.9, y: 20, z: -103.1}
   m_LocalScale: {x: 97.53413, y: 1, z: 47.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 56
@@ -5814,6 +5998,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5862,6 +6047,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.4149723, y: 120.25627, z: -105.15877}
   m_LocalScale: {x: 5, y: 0.5, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 3
@@ -5876,6 +6062,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -5974,6 +6164,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6022,6 +6213,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -16.175026, y: 123.68627, z: -138.57877}
   m_LocalScale: {x: 5, y: 0.5, z: 5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 8
@@ -6055,6 +6247,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -18.21, y: 120.24, z: -300.13}
   m_LocalScale: {x: 3.8368, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 34
@@ -6083,6 +6276,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6131,6 +6325,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -6222,9 +6420,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -28.65, y: 0.58, z: -13.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 62
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996282990
 GameObject:
@@ -6269,6 +6468,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -6317,6 +6517,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -44.8, y: 51.9, z: -47.1}
   m_LocalScale: {x: 1, y: 10.276138, z: 10.050855}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 890003792}
   m_RootOrder: 0
@@ -6410,9 +6611,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.1, y: 26.68, z: -53.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 77
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1006608876
 GameObject:
@@ -6457,6 +6659,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6505,6 +6708,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -54.47503, y: 115.61, z: -154.8}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 11
@@ -6519,6 +6723,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -6603,6 +6811,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
   m_LocalPosition: {x: -5.42, y: 118.74, z: -223.37}
   m_LocalScale: {x: 25.3225, y: 1, z: 5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 21
@@ -6631,6 +6840,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6698,6 +6908,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -18.21, y: 123.7, z: -309.7}
   m_LocalScale: {x: 3.8368, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 36
@@ -6726,6 +6937,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6774,6 +6986,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -6839,6 +7055,10 @@ PrefabInstance:
     - target: {fileID: 2791663972986119321, guid: 1aa732dab144d2f49b2702d602423251, type: 3}
       propertyPath: m_Name
       value: Player2Cam
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791663972986119323, guid: 1aa732dab144d2f49b2702d602423251, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 245
       objectReference: {fileID: 0}
     - target: {fileID: 2791663973046406912, guid: 1aa732dab144d2f49b2702d602423251, type: 3}
       propertyPath: m_Name
@@ -6956,6 +7176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: maze wall (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -7053,6 +7277,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7101,6 +7326,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -42.61, y: 121.58, z: -162.52876}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 13
@@ -7115,6 +7341,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -7209,6 +7439,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7257,6 +7488,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.215027, y: 116.266266, z: -105.15877}
   m_LocalScale: {x: 5, y: 0.5, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 1
@@ -7304,6 +7536,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7352,6 +7585,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 31.9, y: 20, z: -20.2211}
   m_LocalScale: {x: 97.53413, y: 1, z: 47.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 43
@@ -7395,6 +7629,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 207.65575, y: 136.03743, z: 310.0482}
   m_LocalScale: {x: 15, y: 25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 88776092}
   m_RootOrder: 2
@@ -7423,6 +7658,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7550,9 +7786,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.75, y: 14.56, z: -10.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 66
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1185877330
 PrefabInstance:
@@ -7564,6 +7801,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -7645,6 +7886,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.065, y: -0.155, z: 4.33}
   m_LocalScale: {x: 0.02857143, y: 0.06639665, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1582364624}
   m_RootOrder: 0
@@ -7659,6 +7901,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -7724,6 +7970,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -7818,6 +8068,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7866,6 +8117,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19.51, y: -2.54, z: -50.5932}
   m_LocalScale: {x: 37.611336, y: 1.9724, z: 53.88921}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 54
@@ -7880,6 +8132,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -7964,6 +8220,7 @@ Transform:
   m_LocalRotation: {x: 0.09229593, y: 0.7010574, z: 0.09229593, w: 0.7010574}
   m_LocalPosition: {x: -54.42, y: 114.74, z: -147.88}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 26
@@ -7992,6 +8249,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8119,9 +8377,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.22, y: 28.66, z: -66.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 81
+  m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1363819982
 PrefabInstance:
@@ -8133,6 +8392,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -8223,6 +8486,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8271,6 +8535,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.465027, y: 118.43627, z: -105.15877}
   m_LocalScale: {x: 5, y: 0.5, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 2
@@ -8306,6 +8571,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1146214007}
   m_RootOrder: 0
@@ -8437,6 +8703,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 26.305027, y: -115.70627, z: 126.65877}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2020817558}
   - {fileID: 1126195126}
@@ -8493,6 +8760,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -8573,6 +8844,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -17.15, y: 113.9, z: -284.0493}
   m_LocalScale: {x: 3.8368, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 31
@@ -8601,6 +8873,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8668,6 +8941,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -49.24, y: 123.34627, z: -181.75}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 16
@@ -8696,6 +8970,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8777,6 +9052,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8825,6 +9101,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.4149723, y: 120.25627, z: -114.18877}
   m_LocalScale: {x: 5, y: 0.5, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 4
@@ -8859,6 +9136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -8891,9 +9169,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 63
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1502431869
 GameObject:
@@ -8924,6 +9203,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -13.9496, y: 117.8329, z: -204.36}
   m_LocalScale: {x: 25.3225, y: 1, z: 7.5456}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 18
@@ -8952,6 +9232,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9019,6 +9300,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -42.7431, y: 117.8329, z: -204.36}
   m_LocalScale: {x: 30.695936, y: 1, z: 7.5456}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 28
@@ -9047,6 +9329,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9097,7 +9380,7 @@ GameObject:
   - component: {fileID: 1566063024}
   - component: {fileID: 1566063023}
   - component: {fileID: 1566063022}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Glass walls (1)
   m_TagString: Invisible Walls
   m_Icon: {fileID: 0}
@@ -9128,6 +9411,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9176,9 +9460,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.4215, y: 7.0562, z: -173.9054}
   m_LocalScale: {x: 10.01791, y: 9.368861, z: 45.329063}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 84
+  m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1580628697
 GameObject:
@@ -9192,7 +9477,7 @@ GameObject:
   - component: {fileID: 1580628700}
   - component: {fileID: 1580628699}
   - component: {fileID: 1580628698}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Glass walls (2)
   m_TagString: Invisible Walls
   m_Icon: {fileID: 0}
@@ -9223,6 +9508,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9271,9 +9557,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 50.1942, y: 7.0562, z: -180.0152}
   m_LocalScale: {x: 57.517525, y: 9.368861, z: 33.10835}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 85
+  m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582364620
 GameObject:
@@ -9318,6 +9605,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9366,6 +9654,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.15, y: 5.69, z: -65.09}
   m_LocalScale: {x: 31, y: 15.061001, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1232193424}
   m_Father: {fileID: 0}
@@ -9400,6 +9689,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 207.65575, y: 145.75743, z: 315.61816}
   m_LocalScale: {x: 15, y: 25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 88776092}
   m_RootOrder: 4
@@ -9428,6 +9718,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9555,9 +9846,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.75, y: 14.56, z: 12.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 67
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1607886657
 GameObject:
@@ -9602,6 +9894,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9650,6 +9943,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.67, y: 8.634, z: -43.77}
   m_LocalScale: {x: 4.5456, y: 1.1681, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 50
@@ -9683,6 +9977,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -14.26, y: 117.8329, z: -214.8}
   m_LocalScale: {x: 25.3225, y: 1, z: 7.5456}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 20
@@ -9711,6 +10006,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9778,6 +10074,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.346, y: 126.38, z: -150.0576}
   m_LocalScale: {x: 10.483602, y: 0.5, z: 0.7989242}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 25
@@ -9806,6 +10103,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9887,6 +10185,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9935,6 +10234,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 15.55, z: 0}
   m_LocalScale: {x: 66.69, y: 1, z: 47.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 41
@@ -9968,6 +10268,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -18.21, y: 125.24, z: -314.29}
   m_LocalScale: {x: 3.8368, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 37
@@ -9996,6 +10297,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10123,9 +10425,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.6799994, y: 14.56, z: 12.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 73
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1709028680
 GameObject:
@@ -10156,6 +10459,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 212.81575, y: 136.03743, z: 315.20816}
   m_LocalScale: {x: 15, y: 25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 88776092}
   m_RootOrder: 0
@@ -10184,6 +10488,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10232,6 +10537,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -10293,6 +10602,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -10387,6 +10700,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10435,6 +10749,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 27.1492, y: 30.6, z: -113.198}
   m_LocalScale: {x: 119.39167, y: 1, z: 216.78091}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 53
@@ -10483,6 +10798,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10531,9 +10847,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 53.99, y: -1.12, z: -190.59}
   m_LocalScale: {x: 1, y: 0.73675, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 89
+  m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1790335213
 GameObject:
@@ -10578,6 +10895,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10626,6 +10944,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.4149723, y: 120.25627, z: -122.79877}
   m_LocalScale: {x: 5, y: 0.5, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 5
@@ -10640,6 +10959,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -10738,6 +11061,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10786,6 +11110,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -35.325027, y: 123.34627, z: -162.52876}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 14
@@ -10879,9 +11204,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -26.64, y: 28.05, z: -66.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 80
+  m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1837394773
 GameObject:
@@ -10926,6 +11252,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10974,6 +11301,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 26.054, y: -3.6824, z: -23.4}
   m_LocalScale: {x: 12.90623, y: 1, z: 29.0273}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 47
@@ -11007,6 +11335,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 207.65575, y: 136.03743, z: 319.99817}
   m_LocalScale: {x: 15, y: 25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 88776092}
   m_RootOrder: 3
@@ -11035,6 +11364,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11083,6 +11413,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -11182,6 +11516,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11230,6 +11565,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.01, y: 9.9967, z: -89.78}
   m_LocalScale: {x: 1, y: 0.73675, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 57
@@ -11244,6 +11580,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -11309,6 +11649,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -11393,6 +11737,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -13, y: 125.5384, z: -306.8134}
   m_LocalScale: {x: 33.825405, y: 1, z: 14.469722}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 39
@@ -11421,6 +11766,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11502,6 +11848,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11550,6 +11897,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.83, z: 0}
   m_LocalScale: {x: 66.69, y: 1, z: 47.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 39
@@ -11564,6 +11912,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -11646,6 +11998,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 634414763}
   m_RootOrder: 1
@@ -11835,9 +12188,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.79, y: 14.56, z: 12.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 69
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2014944887
 PrefabInstance:
@@ -11849,6 +12203,10 @@ PrefabInstance:
     - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_Name
       value: maze wall (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104298508262133038, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848607707136412941, guid: 04588d7295c2bb148b825ff8351e7bf4, type: 3}
       propertyPath: m_RootOrder
@@ -11947,6 +12305,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11995,6 +12354,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -21.665028, y: 114.10627, z: -105.15877}
   m_LocalScale: {x: 5, y: 0.5, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 0
@@ -12028,6 +12388,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -17.58, y: 116.24, z: -289.6}
   m_LocalScale: {x: 3.8368, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 32
@@ -12056,6 +12417,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12137,6 +12499,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12185,6 +12548,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -7.5137, y: 124.76, z: -139.56877}
   m_LocalScale: {x: 5, y: 0.5, z: 2.9626}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1435614038}
   m_RootOrder: 9
@@ -12207,7 +12571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2058741455
 Transform:
   m_ObjectHideFlags: 0
@@ -12216,11 +12580,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058741454}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -16.544971, y: 7.6399994, z: -58.701233}
+  m_LocalPosition: {x: 37.502914, y: 15.901135, z: -89.832596}
   m_LocalScale: {x: 8, y: 1, z: 3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 59
+  m_Father: {fileID: 712634587}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &2058741456
 BoxCollider:
@@ -12246,6 +12611,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12373,9 +12739,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.66, y: 28.54, z: -53.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 78
+  m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2124247001
 GameObject:
@@ -12403,9 +12770,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13, y: 0, z: -30.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 61
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2791663972338551272
 PrefabInstance:
@@ -12417,6 +12785,10 @@ PrefabInstance:
     - target: {fileID: 2791663972986119321, guid: 1aa732dab144d2f49b2702d602423251, type: 3}
       propertyPath: m_Name
       value: Player1Cam
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791663972986119323, guid: 1aa732dab144d2f49b2702d602423251, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2791663972986119325, guid: 1aa732dab144d2f49b2702d602423251, type: 3}
       propertyPath: Player2

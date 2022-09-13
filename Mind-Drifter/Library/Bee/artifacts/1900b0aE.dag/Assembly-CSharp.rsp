@@ -351,6 +351,7 @@
 "Assets/Scripts/P2Spherebehaviour.cs"
 "Assets/Scripts/Pickup.cs"
 "Assets/Scripts/PlayerControl.cs"
+"Assets/Scripts/TargetContainer.cs"
 "Assets/Scripts/TempToolsShane/CollisionBehaviour.cs"
 "Assets/Scripts/TempToolsShane/JumpBehaviour.cs"
 "Assets/Scripts/TempToolsShane/MovementBehaviour.cs"

@@ -7,14 +7,21 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    //**
     public GameObject darkwall1;
     public GameObject darkwall2;
     public GameObject darkwall3;
     public GameObject darkwall4;
     public GameObject darkwallroof;
+
     public GameObject Player1Cam;
     public GameObject Player2Cam;
-  public static GameObject CurrentPlayer;
+    public static GameObject CurrentPlayer;
+    //**
+    public GameObject[] player = new GameObject[2];
+    public int activePlayer = 0;
+
+    //**
     public GameObject[] InvisWalls;
 
     public GameObject arrowWall;
@@ -29,23 +36,21 @@ public class GameController : MonoBehaviour
     public GameObject mazeBlocker3;
 
     public Transform arrowWallSpawner;
+
     public Transform player1Checkpoint;
     public Transform player2Checkpoint;
 
     public GameObject player1Door;
     public GameObject player2Door;
+    //**
 
     public AudioSource MindSwap;
+
     /// <summary>
     /// Start is called before the first frame update.
     /// </summary>
     void Start()
     {
-        InvisWalls = GameObject.FindGameObjectsWithTag("Invisible Walls");
-        foreach (GameObject GO in InvisWalls)
-        {
-            GO.GetComponent<MeshRenderer>().enabled = true;
-        }
         Cursor.visible = false;
         CurrentPlayer = Player1Cam;
         Player2Cam.SetActive(false);
@@ -66,6 +71,7 @@ public class GameController : MonoBehaviour
         }
     }
 
+    //**
     public void CloseDarkRoom()
     {
         darkwall1.SetActive(false);
@@ -74,47 +80,65 @@ public class GameController : MonoBehaviour
         darkwall4.SetActive(false);
         darkwallroof.SetActive(false);
     }
+    //**
+
     public void CloseArrowWall()
     {
         mainArrowWall.SetActive(false);
         CancelInvoke();
     }
 
+    public void Deactivate(GameObject obj)
+    {
+        obj.GetComponent<TargetContainer>().target.SetActive(false);
+    }
+
+    //**
     public void DeactivateMazeBlocker1()
     {
         mazeBlocker1.SetActive(false);
     }
-
+    
     public void DeactivateMazeBlocker2()
     {
         mazeBlocker2.SetActive(false);
     }
-
+    
     public void DeactivateMazeBlocker3()
     {
         mazeBlocker3.SetActive(false);
     }
+    //**
 
     public void MainMenu()
     {
         SceneManager.LoadScene(4);
     }
 
+    //**
     public void ActivateHiddenPlatform()
     {
         hiddenPlatform1.SetActive(true);
         hiddenPlatform2.SetActive(true);
     }
+    //**
 
+    public void Activate(GameObject obj)
+    {
+        obj.GetComponent<TargetContainer>().target.SetActive(true);
+    }
+
+    //**
     public void ActivatePlayer1Door()
     {
         player1Door.SetActive(true);
     }
-
+    
     public void ActivatePlayer2Door()
     {
         player2Door.SetActive(true);
     }
+    //**
 
     public void ArrowWallSpawner()
     {
@@ -127,30 +151,25 @@ public class GameController : MonoBehaviour
         {
             MindSwap.Play();
 
+            //**
             if (CurrentPlayer == Player1Cam)
             {
                 Player2Cam.SetActive(true);
                 CurrentPlayer = Player2Cam;
                 Player1Cam.SetActive (false);
-                foreach (GameObject GO in InvisWalls)
-                {
-                    GO.GetComponent<MeshRenderer>().enabled = true;
-                }
             }
             else if (CurrentPlayer == Player2Cam)
             {
                 Player1Cam.SetActive(true);
                 CurrentPlayer = Player1Cam;
                 Player2Cam.SetActive(false);
-                foreach (GameObject GO in InvisWalls)
-                {
-                    GO.GetComponent<MeshRenderer>().enabled = false;
-                }
-
             }
+            //**
 
-            
-
+            /*
+            player[0].SetActive(!player[0].activeSelf)
+            player[1].SetActive(!player[0].activeSelf)
+            */
         }
     }
 

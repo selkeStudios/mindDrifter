@@ -33,6 +33,7 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody>();
+        gc = FindObjectOfType<GameController>();
     }
 
     /// <summary>
@@ -43,18 +44,30 @@ public class PlayerControl : MonoBehaviour
         CanMove();
 
         Movement();
-
-        gc = GameObject.FindObjectOfType<GameController>();
-
     }
 
     /// <summary>
     /// Detects the beginning of collision.
+    /// 
+    /// SHANE: I'm almost certain there is a much better way to do this, as this is a lot of if statements to check EVERY collision
+    /// One idea is to instead have the objects handle their own behavior, and the player uses a raycast to get the objects to set off (such as a function on each called Activate()
     /// </summary>
     /// <param name="collision">The object collided with.</param>
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "lightswitch")
+        /*
+        if (collision.gameObject.CompareTag("CollisionActivate"))
+        {
+            gc.Activate(collision.GameObject);
+        }
+
+        if (collision.gameObject.CompareTag("CollisionDeactivate"))
+        {
+            gc.Deactivate(collision.GameObject);
+        }
+        */
+
+        if (collision.gameObject.name == "lightswitch")
         {
             gc.CloseDarkRoom();
 
@@ -70,8 +83,8 @@ public class PlayerControl : MonoBehaviour
 
         if(collision.gameObject.name.Contains("Arrow wall") && gameObject.CompareTag("Player1"))
         {
-          //  Destroy(collision.gameObject);
-          gameObject.transform.position = gc.player1Checkpoint.transform.position;
+            //Destroy(collision.gameObject);
+            gameObject.transform.position = gc.player1Checkpoint.transform.position;
             print(gc.player1Checkpoint.position);
 
         }
@@ -81,7 +94,7 @@ public class PlayerControl : MonoBehaviour
             gameObject.transform.position = gc.player2Checkpoint.position;
         }
 
-       if(collision.gameObject.name == "Player 2" && gameObject.CompareTag("Player1"))
+        if(collision.gameObject.name == "Player 2" && gameObject.CompareTag("Player1"))
         {
             gc.MainMenu();
 
@@ -137,6 +150,8 @@ public class PlayerControl : MonoBehaviour
 
     /// <summary>
     /// Detects when collision is continuous.
+    /// 
+    /// I'm gonna be honest, thinking more, some of this I don't even understand anyways
     /// </summary>
     /// <param name="collision">The object collided with.</param>
     private void OnCollisionStay(Collision collision)
@@ -165,7 +180,7 @@ public class PlayerControl : MonoBehaviour
          
         if (canMove == true)
         {
-            Vector3 move = transform.right * x*Time.deltaTime + transform.forward * z*Time.deltaTime;
+            Vector3 move = transform.right * x * Time.deltaTime + transform.forward * z * Time.deltaTime;
             move.Normalize();
 
 
