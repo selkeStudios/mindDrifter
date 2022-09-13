@@ -341,7 +341,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/ArrowWallMovement.cs"
 "Assets/Scripts/CameraScript.cs"
 "Assets/Scripts/CreationAbility.cs"
 "Assets/Scripts/GameController.cs"
@@ -350,11 +349,12 @@
 "Assets/Scripts/P1BoxBehaviour.cs"
 "Assets/Scripts/P2Spherebehaviour.cs"
 "Assets/Scripts/Pickup.cs"
+"Assets/Scripts/PlayerBehaviourSet/CollisionBehaviour.cs"
+"Assets/Scripts/PlayerBehaviourSet/JumpBehaviour.cs"
+"Assets/Scripts/PlayerBehaviourSet/MovementBehaviour.cs"
 "Assets/Scripts/PlayerControl.cs"
 "Assets/Scripts/TargetContainer.cs"
-"Assets/Scripts/TempToolsShane/CollisionBehaviour.cs"
-"Assets/Scripts/TempToolsShane/JumpBehaviour.cs"
-"Assets/Scripts/TempToolsShane/MovementBehaviour.cs"
+"Assets/Scripts/Unused/ArrowWallMovement.cs"
 -langversion:9.0
 
 /deterministic

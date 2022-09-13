@@ -47,6 +47,10 @@ public class CreationAbility : MonoBehaviour
             HoldObj(Instantiate(shapes[selectedShape]));
         }
 
+        /*
+         *  Rotate activation logic
+        */
+
         //Rotate object left and right
         if (objHeld)
         {

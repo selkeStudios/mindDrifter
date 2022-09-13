@@ -41,8 +41,6 @@ public class PlayerControl : MonoBehaviour
     /// </summary>
     void Update()
     {
-        CanMove();
-
         Movement();
     }
 
@@ -67,6 +65,7 @@ public class PlayerControl : MonoBehaviour
         }
         */
 
+        //**
         if (collision.gameObject.name == "lightswitch")
         {
             gc.CloseDarkRoom();
@@ -160,7 +159,6 @@ public class PlayerControl : MonoBehaviour
         {
             transform.position = gc.player2Checkpoint.position;
         }
-
     }
   
     /// <summary>
@@ -196,36 +194,4 @@ public class PlayerControl : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
     }
-
-    /// <summary>
-    /// Detects and sets whether the player should be able to move or not.
-    /// </summary>
-    public void CanMove()
-    {
-        if (GameController.CurrentPlayer.name == "Player1Cam")
-        {   
-            if(gameObject.tag == "Player1")
-            {
-                canMove = true;
-            }
-            else
-            {
-                canMove = false;
-            }
-        }
-
-        if (GameController.CurrentPlayer.name == "Player2Cam")
-        {
-            if(gameObject.tag == "Player2")
-            {
-                canMove = true;
-            }
-            else
-            {
-                canMove = false;
-            }
-        }
-
-    }
-
 }
