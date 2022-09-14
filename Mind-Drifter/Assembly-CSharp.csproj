@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CreationAbility.cs" />
     <Compile Include="Assets\Scripts\Interact.cs" />
-    <Compile Include="Assets\Scripts\TargetContainer.cs" />
+    <Compile Include="Assets\Scripts\ObjInteract.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\MainMenuBehaviour.cs" />
     <Compile Include="Assets\Scripts\Unused\ArrowWallMovement.cs" />
@@ -66,10 +66,10 @@
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviourSet\JumpBehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\P1BoxBehaviour.cs" />
-    <Compile Include="Assets\Scripts\P2Spherebehaviour.cs" />
+    <Compile Include="Assets\Scripts\Unused\P1BoxBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Unused\P2Spherebehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviourSet\MovementBehaviour.cs" />
-    <Compile Include="Assets\Scripts\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\Unused\CameraScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
