@@ -16,6 +16,7 @@ TagManager:
   - CreativeObject
   - CollisionActivate
   - CollisionDeactivate
+  - Selectable
   layers:
   - Default
   - TransparentFX
