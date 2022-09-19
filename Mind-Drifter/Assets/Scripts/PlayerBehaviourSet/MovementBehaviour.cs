@@ -10,7 +10,7 @@ public class MovementBehaviour : MonoBehaviour
     public CapsuleCollider coll;
     public Camera cam;
 
-    public bool canMove;
+    public bool canMove = true;
 
     /// <summary>
     /// Movement Shit
@@ -41,13 +41,18 @@ public class MovementBehaviour : MonoBehaviour
     public Vector3 camOffset;
 
     // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
         gc = FindObjectOfType<GameController>();
         rb = GetComponent<Rigidbody>();
         cb = GetComponent<CollisionBehaviour>();
         coll = GetComponent<CapsuleCollider>();
         cam = GetComponentInChildren<Camera>();
+    }
+
+    void Start()
+    {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }

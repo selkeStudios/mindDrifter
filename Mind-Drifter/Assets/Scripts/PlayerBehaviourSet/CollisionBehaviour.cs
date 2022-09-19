@@ -27,7 +27,7 @@ public class CollisionBehaviour : MonoBehaviour
     public Vector3 perpLeft;
     public Vector3 perpRight;
 
-    private void Start()
+    void Start()
     {
         coll = GetComponent<CapsuleCollider>();
     }

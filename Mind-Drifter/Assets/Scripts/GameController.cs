@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameObject[] player = new GameObject[2];
+    public MovementBehaviour[] mb = new MovementBehaviour[2];
+    public bool talking = false;
     public bool player1 = true;
 
     public AudioSource MindSwap;
@@ -18,6 +20,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         player[1].SetActive(false);
+        mb[1].canMove = false;
     }
 
     /// <summary>
@@ -26,21 +29,20 @@ public class GameController : MonoBehaviour
     void Update()
     {
         SwitchBodies();
-
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(0);
-        }
     }
 
     public void SwitchBodies()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            MindSwap.Play();
+            //MindSwap.Play();
 
-            player[0].SetActive(!player[0].activeSelf);
-            player[1].SetActive(!player[0].activeSelf);
+            for (int x = 0; x < 2; x++)
+            {
+                player[x].SetActive(!player[0].activeSelf);
+                mb[x].canMove = !mb[0].canMove;
+            }
+
             player1 = !player1;
         }
     }
