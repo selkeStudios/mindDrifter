@@ -59,23 +59,26 @@
     <Compile Include="Assets\Scripts\CreationAbility.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviourSet\InteractBehaviour.cs" />
     <Compile Include="Assets\Scripts\Telekinesis.cs" />
-    <Compile Include="Assets\Scripts\ObjInteract.cs" />
-    <Compile Include="Assets\Scripts\Pickup.cs" />
+    <Compile Include="Assets\Scripts\Unused\Pickup.cs" />
     <Compile Include="Assets\Scripts\MainMenuBehaviour.cs" />
     <Compile Include="Assets\Scripts\Unused\ArrowWallMovement.cs" />
     <Compile Include="Assets\Scripts\SelectionManager.cs" />
     <Compile Include="Assets\Scripts\Interactables\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviourSet\CollisionBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Interactables\MapItems\Door.cs" />
     <Compile Include="Assets\Scripts\Interactables\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Interactables\IInteractable.cs" />
-    <Compile Include="Assets\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\Unused\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Unused\P1BoxBehaviour.cs" />
     <Compile Include="Assets\Scripts\Unused\P2Spherebehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviourSet\MovementBehaviour.cs" />
     <Compile Include="Assets\Scripts\Interactables\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Unused\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\Interactables\MapItems\HingedObjectBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Interactables\MapItems\SwitchBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Interactables\MapItems\PlateBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Interactables\MapItems\BellBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Interactables\MapItems\MovingObjectBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

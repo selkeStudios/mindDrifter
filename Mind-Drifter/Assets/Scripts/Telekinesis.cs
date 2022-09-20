@@ -12,7 +12,7 @@ public class Telekinesis : MonoBehaviour
 
     private void Start()
     {
-
+        cam = GetComponentInChildren<Camera>();
     }
 
     private void Update()
