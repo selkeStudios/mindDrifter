@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 99610080998901727}
   - component: {fileID: 3438630363345221085}
   m_Layer: 7
-  m_Name: Lever
+  m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,4 +210,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000f4efbdf2ff654ab4dd16ecf9deff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objs: []
   rotation: -148

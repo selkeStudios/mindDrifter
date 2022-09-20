@@ -42,7 +42,7 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
             else if (position > maxDistance)
             {
 
-                parent.position += axis * maxDistance * dir;
+                parent.position = initial + axis * maxDistance * dir;
                 position = maxDistance;
             }
         }
@@ -79,9 +79,12 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
 
     private void OnCollisionExit(Collision collision)
     {
-        Transform hit = collision.transform;
-        hit.SetParent(null);
-        collision.gameObject.GetComponent<Rigidbody>().velocity += axis * dir * moveSpeed;
+        if (active && timer !> 0)
+        {
+            Transform hit = collision.transform;
+            hit.SetParent(null);
+            collision.gameObject.GetComponent<Rigidbody>().velocity += axis * dir * moveSpeed;
+        }
     }
 
     public void Interact()

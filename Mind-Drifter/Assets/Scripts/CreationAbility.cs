@@ -6,7 +6,7 @@ public class CreationAbility : MonoBehaviour
 {
     //Array of primitives
     public GameObject[] shapes;
-    public int selectedShape;
+    public int selectedShape = 0;
 
     public Camera cam;
 
@@ -23,7 +23,7 @@ public class CreationAbility : MonoBehaviour
     //Held object data
     public GameObject obj;
     public Rigidbody objRB;
-    public Vector3 objPos = new Vector3(2, 0, 0);
+    public Vector3 objPos = new Vector3(0, 0, 2);
     public Vector3 objScale = Vector3.one;
     public Quaternion objRot = Quaternion.identity;
 
@@ -31,6 +31,11 @@ public class CreationAbility : MonoBehaviour
 
     public float scaleSens;
     public float rotSens;
+
+    void Awake()
+    {
+        cam = GetComponentInChildren<Camera>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -79,7 +84,7 @@ public class CreationAbility : MonoBehaviour
         {
             RaycastHit hit;
 
-            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit) && hit.distance <= 5 && hit.collider.tag == "CreativeObject")
+            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit) && hit.distance <= 5 && hit.collider != null && hit.collider.tag == "CreativeObject")
             {
                 HoldObj(hit.collider.gameObject);
             }

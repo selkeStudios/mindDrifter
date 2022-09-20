@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlateBehaviour : MonoBehaviour
 {
     public GameObject obj;
-    public IInteractable ib;
+    private IInteractable ib;
+
+    private string co = "CreativeObject";
 
     void Start()
     {
@@ -14,11 +16,17 @@ public class PlateBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ib.Interact();
+        if (other.CompareTag(co))
+        {
+            ib.Interact();
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        ib.Interact();
+        if (other.CompareTag(co))
+        {
+            ib.Interact();
+        }
     }
 }
