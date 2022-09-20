@@ -5,6 +5,14 @@ using UnityEngine;
 public class ArrowWallMovement : MonoBehaviour
 {
     public float speed;
+<<<<<<< Updated upstream:Mind-Drifter/Assets/Scripts/Unused/ArrowWallMovement.cs
+=======
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+>>>>>>> Stashed changes:Assets/Scripts/ArrowWallMovement.cs
 
     // Update is called once per frame
     void Update()
