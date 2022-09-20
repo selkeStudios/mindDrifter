@@ -13,13 +13,10 @@ TagManager:
   - Player2Goal
   - Player1Goal
   - Invisible Walls
-<<<<<<< Updated upstream:Mind-Drifter/ProjectSettings/TagManager.asset
   - CreativeObject
   - CollisionActivate
   - CollisionDeactivate
   - Selectable
-=======
->>>>>>> Stashed changes:ProjectSettings/TagManager.asset
   layers:
   - Default
   - TransparentFX
