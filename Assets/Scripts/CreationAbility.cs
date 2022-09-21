@@ -8,6 +8,7 @@ public class CreationAbility : MonoBehaviour
     public GameObject[] shapes;
     public int selectedShape = 0;
 
+    public MovementBehaviour mb;
     public Camera cam;
 
     //Keycodes
@@ -34,6 +35,7 @@ public class CreationAbility : MonoBehaviour
 
     void Awake()
     {
+        mb = GetComponent<MovementBehaviour>();
         cam = GetComponentInChildren<Camera>();
     }
 
@@ -46,59 +48,62 @@ public class CreationAbility : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Create object and hold it differently than "usual"
-        if (Input.GetKeyDown(create) && !objHeld)
+        if (mb.canMove)
         {
-            HoldObj(Instantiate(shapes[selectedShape]));
-        }
-
-        /*
-         *  Rotate activation logic
-        */
-
-        //Rotate object left and right
-        if (objHeld)
-        {
-            objRot = Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens, 0);
-            obj.transform.localRotation *= objRot;
-        }
-
-        //Changes the selected object, held or non-existent (yet)
-        if (Input.GetKeyDown(shapeChange))
-        {
-            SwapObject();
-        }
-
-        //Scale object
-        if (Input.GetKey(scaleUp) && !Input.GetKey(scaleDown))
-        {
-            ScaleObj(scaleUp);
-        }
-        else if (Input.GetKey(scaleDown) && !Input.GetKey(scaleUp))
-        {
-            ScaleObj(scaleDown);
-        }
-
-        //Pickup/set down an object
-        if (Input.GetKeyDown(hold) && !objHeld)
-        {
-            RaycastHit hit;
-
-            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit) && hit.distance <= 5 && hit.collider != null && hit.collider.tag == "CreativeObject")
+            //Create object and hold it differently than "usual"
+            if (Input.GetKeyDown(create) && !objHeld)
             {
-                HoldObj(hit.collider.gameObject);
+                HoldObj(Instantiate(shapes[selectedShape]));
             }
-        }
-        else if (Input.GetKeyDown(hold))
-        {
-            obj.transform.parent = null;
 
-            objRB.constraints = RigidbodyConstraints.None;
+            /*
+             *  Rotate activation logic
+            */
 
-            objHeld = false;
+            //Rotate object left and right
+            if (objHeld)
+            {
+                objRot = Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens, 0);
+                obj.transform.localRotation *= objRot;
+            }
 
-            objScale = Vector3.one;
-            objRot = Quaternion.identity;
+            //Changes the selected object, held or non-existent (yet)
+            if (Input.GetKeyDown(shapeChange))
+            {
+                SwapObject();
+            }
+
+            //Scale object
+            if (Input.GetKey(scaleUp) && !Input.GetKey(scaleDown))
+            {
+                ScaleObj(scaleUp);
+            }
+            else if (Input.GetKey(scaleDown) && !Input.GetKey(scaleUp))
+            {
+                ScaleObj(scaleDown);
+            }
+
+            //Pickup/set down an object
+            if (Input.GetKeyDown(hold) && !objHeld)
+            {
+                RaycastHit hit;
+
+                if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit) && hit.distance <= 5 && hit.collider != null && hit.collider.tag == "CreativeObject")
+                {
+                    HoldObj(hit.collider.gameObject);
+                }
+            }
+            else if (Input.GetKeyDown(hold))
+            {
+                obj.transform.parent = null;
+
+                objRB.constraints = RigidbodyConstraints.None;
+
+                objHeld = false;
+
+                objScale = Vector3.one;
+                objRot = Quaternion.identity;
+            }
         }
     }
 
