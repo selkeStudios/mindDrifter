@@ -18,7 +18,6 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
     private float position = 0;
 
     private float timer = 0;
-    private bool falling = false;
 
     // Start is called before the first frame update
     void Start()

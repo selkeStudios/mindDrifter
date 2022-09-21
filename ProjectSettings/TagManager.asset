@@ -17,6 +17,7 @@ TagManager:
   - CollisionActivate
   - CollisionDeactivate
   - Selectable
+  - Destructible
   layers:
   - Default
   - TransparentFX

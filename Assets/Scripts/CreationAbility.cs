@@ -28,7 +28,7 @@ public class CreationAbility : MonoBehaviour
     public Vector3 objScale = Vector3.one;
     public Quaternion objRot = Quaternion.identity;
 
-    public bool objHeld;
+    public bool objHeld = false;
 
     public float scaleSens;
     public float rotSens;
@@ -50,59 +50,69 @@ public class CreationAbility : MonoBehaviour
     {
         if (mb.canMove)
         {
-            //Create object and hold it differently than "usual"
-            if (Input.GetKeyDown(create) && !objHeld)
-            {
-                HoldObj(Instantiate(shapes[selectedShape]));
-            }
-
-            /*
-             *  Rotate activation logic
-            */
-
-            //Rotate object left and right
-            if (objHeld)
-            {
-                objRot = Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens, 0);
-                obj.transform.localRotation *= objRot;
-            }
-
             //Changes the selected object, held or non-existent (yet)
             if (Input.GetKeyDown(shapeChange))
             {
                 SwapObject();
             }
 
-            //Scale object
-            if (Input.GetKey(scaleUp) && !Input.GetKey(scaleDown))
+            if (objHeld)
             {
-                ScaleObj(scaleUp);
-            }
-            else if (Input.GetKey(scaleDown) && !Input.GetKey(scaleUp))
-            {
-                ScaleObj(scaleDown);
-            }
-
-            //Pickup/set down an object
-            if (Input.GetKeyDown(hold) && !objHeld)
-            {
-                RaycastHit hit;
-
-                if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit) && hit.distance <= 5 && hit.collider != null && hit.collider.tag == "CreativeObject")
+                //Mark object as no longer held
+                if (obj.transform.parent != cam.transform)
                 {
-                    HoldObj(hit.collider.gameObject);
+                    objHeld = false;
+                    obj = null;
+                }
+
+                //Drop object
+                if (Input.GetKeyDown(hold))
+                {
+                    obj.transform.parent = null;
+
+                    objRB.constraints = RigidbodyConstraints.None;
+
+                    objHeld = false;
+
+                    objScale = Vector3.one;
+                    objRot = Quaternion.identity;
+                }
+
+                if (obj != null)
+                {
+                    //Rotate object left and right
+                    objRot = Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens, 0);
+                    obj.transform.localRotation *= objRot;
+
+                    //Scale object
+                    if (Input.GetKey(scaleUp) && !Input.GetKey(scaleDown))
+                    {
+                        ScaleObj(scaleUp);
+                    }
+                    else if (Input.GetKey(scaleDown) && !Input.GetKey(scaleUp))
+                    {
+                        ScaleObj(scaleDown);
+                    }
                 }
             }
-            else if (Input.GetKeyDown(hold))
+            else if (!objHeld)
             {
-                obj.transform.parent = null;
+                //Create object and hold it differently than "usual"
+                if (Input.GetKeyDown(create))
+                {
+                    HoldObj(Instantiate(shapes[selectedShape]));
+                }
 
-                objRB.constraints = RigidbodyConstraints.None;
+                //Pickup object
+                if (Input.GetKeyDown(hold))
+                {
+                    RaycastHit hit;
 
-                objHeld = false;
-
-                objScale = Vector3.one;
-                objRot = Quaternion.identity;
+                    if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit) && hit.distance <= 5 && hit.collider != null && hit.collider.tag == "CreativeObject")
+                    {
+                        HoldObj(hit.collider.gameObject);
+                    }
+                }
             }
         }
     }

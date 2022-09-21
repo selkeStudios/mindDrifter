@@ -5,6 +5,7 @@ using UnityEngine;
 public class CannonBehaviour : MonoBehaviour, IInteractable
 {
     public GameObject loaded;
+    public ProjectileBehaviour pb;
 
     public Vector3 loadPos;
     public float rejected;
@@ -14,10 +15,11 @@ public class CannonBehaviour : MonoBehaviour, IInteractable
 
     private string co = "CreativeObject";
     private string check = "Sphere";
+    private string check_ = "Player";
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(co) && other.name.Contains(check))
+        if (other.CompareTag(co) && other.name.Contains(check) && loaded == null)
         {
             loaded = other.gameObject;
             rb = loaded.GetComponent<Rigidbody>();
@@ -25,9 +27,12 @@ public class CannonBehaviour : MonoBehaviour, IInteractable
             loaded.transform.parent = transform;
             loaded.transform.localPosition = loadPos;
         }
-        else if (other.gameObject.GetComponent<Rigidbody>())
+        else if (other.gameObject.GetComponent<Rigidbody>() && !other.name.Contains(check_))
         {
-            other.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * rejected, ForceMode.Impulse);
+            Rigidbody rb_ = other.gameObject.GetComponent<Rigidbody>();
+            other.gameObject.transform.parent = null;
+            rb_.constraints = RigidbodyConstraints.None;
+            rb_.AddForce(transform.forward * rejected, ForceMode.Impulse);
         }
     }
 
@@ -37,6 +42,7 @@ public class CannonBehaviour : MonoBehaviour, IInteractable
         {
             rb.constraints = RigidbodyConstraints.None;
             loaded.transform.parent = null;
+            loaded.AddComponent<ProjectileBehaviour>();
             rb.AddForce(transform.forward * fire, ForceMode.Impulse);
             rb = null;
             loaded = null;

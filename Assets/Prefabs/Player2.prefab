@@ -196,6 +196,7 @@ MonoBehaviour:
   - {fileID: 4792919770564384757, guid: 1d8cfb6df56fd8844847c94faf982b37, type: 3}
   - {fileID: 224755005479742838, guid: 8c898260b8ae4924fab955c00f590819, type: 3}
   selectedShape: 0
+  mb: {fileID: 0}
   cam: {fileID: 0}
   create: 99
   hold: 118
@@ -211,8 +212,8 @@ MonoBehaviour:
   objScale: {x: 1, y: 1, z: 1}
   objRot: {x: 0, y: 0, z: 0, w: 1}
   objHeld: 0
-  scaleSens: 0
-  rotSens: 0
+  scaleSens: 10
+  rotSens: 10
 --- !u!114 &4679691402288179704
 MonoBehaviour:
   m_ObjectHideFlags: 0
