@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwitchBehaviour : MonoBehaviour, IInteractable
+public class TerminalManager : MonoBehaviour
 {
     public GameObject[] objs;
     private IInteractable[] ib;
-    public float rotation;
 
-    private bool activated = false;
+    public int active;
 
+    // Start is called before the first frame update
     void Start()
     {
         ib = new IInteractable[objs.Length];
@@ -20,13 +20,12 @@ public class SwitchBehaviour : MonoBehaviour, IInteractable
         }
     }
 
-    public void Interact()
+    // Update is called once per frame
+    void Update()
     {
-        if (!activated)
+        if (active > 1)
         {
-            transform.parent.Rotate(Vector3.up * rotation);
-
-            for (int x = 0; x < ib.Length; x++)
+            for (int x = 0; x < objs.Length; x++)
             {
                 ib[x].Interact();
             }
