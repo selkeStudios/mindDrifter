@@ -64,10 +64,10 @@ public class MovementBehaviour : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if (mb.paused)
+        /*if (mb.paused)
         {
             canMove = false;
-        }
+        }*/
 
         if (canMove)
         {

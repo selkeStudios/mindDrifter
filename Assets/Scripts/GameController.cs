@@ -21,8 +21,8 @@ public class GameController : MonoBehaviour
     {
         player[0] = GameObject.Find("Logic").transform.GetChild(0).gameObject;
         player[1] = GameObject.Find("Creative").transform.GetChild(0).gameObject;
-        mb[0] = player[0].GetComponent<MovementBehaviour>();
-        mb[1] = player[1].GetComponent<MovementBehaviour>();
+        mb[0] = player[0].transform.parent.GetComponent<MovementBehaviour>();
+        mb[1] = player[1].transform.parent.GetComponent<MovementBehaviour>();
 
         player[1].SetActive(false);
         mb[1].canMove = false;
