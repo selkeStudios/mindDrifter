@@ -19,8 +19,8 @@ public class GameController : MonoBehaviour
     /// </summary>
     void Start()
     {
-        player[0] = GameObject.Find("Logic");
-        player[1] = GameObject.Find("Creative");
+        player[0] = GameObject.Find("Logic").transform.GetChild(0).gameObject;
+        player[1] = GameObject.Find("Creative").transform.GetChild(0).gameObject;
         mb[0] = player[0].GetComponent<MovementBehaviour>();
         mb[1] = player[1].GetComponent<MovementBehaviour>();
 
