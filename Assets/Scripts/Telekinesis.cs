@@ -10,6 +10,9 @@ public class Telekinesis : MonoBehaviour
     private Vector3 oldPos;
     private Vector3 scrollVel;
 
+
+   
+    // gets the camera
     private void Start()
     {
         cam = GetComponentInChildren<Camera>();
@@ -18,7 +21,7 @@ public class Telekinesis : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-
+        //uses camera position to check for objects in pickup layer, LMB press/hold holds object + release lets go
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100f, pickupLayer))
         {
             if (Input.GetMouseButtonDown(0))
@@ -31,12 +34,12 @@ public class Telekinesis : MonoBehaviour
                 DropObj();
             }
         }
-
+        // drops if nothing is being held 
         else
         {
             DropObj();
         }
-
+        // if scroll wheel is used while holding an object moves the object closer or farther from player
         if (heldObj)
         {
             float scroll = Input.mouseScrollDelta.y;
@@ -54,7 +57,7 @@ public class Telekinesis : MonoBehaviour
             oldPos = heldObj.transform.position;
         }
     }
-
+    // removes gravity from object when being held, while holding an object sets it to a child, scrollVel allows object to move speed wise
     void HoldObj(GameObject obj)
     {
         DropObj();
@@ -67,6 +70,7 @@ public class Telekinesis : MonoBehaviour
         scrollVel = Vector3.zero;
     }
 
+    // resets all the changed components in HoldObj
     void DropObj()
     {
         if (heldObj != null)
