@@ -10,6 +10,11 @@ public class SelectionManager : MonoBehaviour
     public Camera cam;
     private Transform _selection;
 
+    void Start()
+    {
+        cam = GetComponentInChildren<Camera>();
+    }
+
     private void Update()
     {
         if (_selection != null)

@@ -9,6 +9,7 @@ public class MovementBehaviour : MonoBehaviour
     public CollisionBehaviour cb;
     public CapsuleCollider coll;
     public Camera cam;
+    public MenuBehaviour mb;
 
     public bool canMove = true;
 
@@ -44,6 +45,7 @@ public class MovementBehaviour : MonoBehaviour
 
     void Awake()
     {
+        mb = FindObjectOfType<MenuBehaviour>();
         gc = FindObjectOfType<GameController>();
         rb = GetComponent<Rigidbody>();
         cb = GetComponent<CollisionBehaviour>();
@@ -62,6 +64,11 @@ public class MovementBehaviour : MonoBehaviour
     /// </summary>
     void Update()
     {
+        if (mb.paused)
+        {
+            canMove = false;
+        }
+
         if (canMove)
         {
             //Determining a movement direction vector

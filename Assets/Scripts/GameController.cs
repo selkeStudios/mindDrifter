@@ -19,6 +19,11 @@ public class GameController : MonoBehaviour
     /// </summary>
     void Start()
     {
+        player[0] = GameObject.Find("Logic");
+        player[1] = GameObject.Find("Creative");
+        mb[0] = player[0].GetComponent<MovementBehaviour>();
+        mb[1] = player[1].GetComponent<MovementBehaviour>();
+
         player[1].SetActive(false);
         mb[1].canMove = false;
     }
