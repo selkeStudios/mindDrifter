@@ -213,4 +213,4 @@ MonoBehaviour:
   objs:
   - {fileID: 0}
   - {fileID: 0}
-  rotation: -116
+  rotation: 116

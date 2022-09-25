@@ -13,11 +13,11 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
     public float maxDistance;
     public float leeWay;
 
-    private int dir;
-    private bool active = false;
-    private float position = 0;
+    public int dir;
+    public bool active = false;
+    public float position = 0;
 
-    private float timer = 0;
+    public float timer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +33,11 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
     {
         if (active)
         {
+            if (timer > 0)
+            {
+                timer = 0;
+            }
+
             if (position < maxDistance)
             {
                 transform.position += axis * moveSpeed * dir * Time.deltaTime;
@@ -40,12 +45,11 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
             }
             else if (position > maxDistance)
             {
-
                 transform.position = initial + axis * maxDistance * dir;
                 position = maxDistance;
             }
         }
-        else
+        else 
         {
             if (position != 0)
             {
@@ -56,7 +60,7 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
                         transform.position -= axis * moveSpeed * dir * Time.deltaTime;
                         position -= moveSpeed * Time.deltaTime;
                     }
-                    else if (position < 0)
+                    else
                     {
                         transform.position = initial;
                         position = 0;
@@ -68,25 +72,6 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
                     timer += Time.deltaTime;
                 }
             }
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        collision.transform.SetParent(transform.GetChild(0));
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        collision.transform.SetParent(null);
-
-        if (active)
-        {
-            collision.gameObject.GetComponent<Rigidbody>().velocity += axis * dir * moveSpeed;
-        }
-        else if (timer >= leeWay)
-        {
-            collision.gameObject.GetComponent<Rigidbody>().velocity -= axis * dir * moveSpeed;
         }
     }
 

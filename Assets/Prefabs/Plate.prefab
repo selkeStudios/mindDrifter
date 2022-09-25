@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1289612422131981469}
   - component: {fileID: 686811393255148915}
   - component: {fileID: 1058833317773911194}
+  - component: {fileID: 6982853796274219891}
   m_Layer: 0
   m_Name: HandPlate_LP
   m_TagString: Untagged
@@ -98,6 +99,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7134285329153936801, guid: 9de8ae0615b7ac24c94674d910ed84a1, type: 3}
+--- !u!114 &6982853796274219891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943685814875002433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be3284b046c21d49a923240b24dc6ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 0}
 --- !u!1 &6152652148029158712
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,8 +121,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6152652148029158854}
-  - component: {fileID: 6152652148029158714}
-  - component: {fileID: 6152652148029158715}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -125,7 +137,7 @@ Transform:
   m_GameObject: {fileID: 6152652148029158712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 0.25, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1582583203721914894}
@@ -133,32 +145,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6152652148029158714
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6152652148029158712}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.05, y: 0.76, z: 1.05}
-  m_Center: {x: 0, y: 0.13, z: 0}
---- !u!114 &6152652148029158715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6152652148029158712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6be3284b046c21d49a923240b24dc6ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obj: {fileID: 0}
 --- !u!1 &9031028625020604804
 GameObject:
   m_ObjectHideFlags: 0

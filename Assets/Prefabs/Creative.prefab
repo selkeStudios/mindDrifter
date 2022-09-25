@@ -132,7 +132,7 @@ MonoBehaviour:
   speedCap: 6
   finalMove: {x: 0, y: 0, z: 0}
   crouched: 0
-  jumpForce: 200
+  jumpForce: 400
   sensitivity: 15
   standOffset: {x: 0, y: 0.5369999, z: 0}
   crouchOffset: {x: 0, y: 0, z: 0}

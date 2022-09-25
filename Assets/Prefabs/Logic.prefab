@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3594486966279727633}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.04, y: 0, z: 0}
 --- !u!20 &3594486966187966863
 Camera:
@@ -120,8 +120,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1821046693762780980}
   - {fileID: 3594486966187966856}
+  - {fileID: 1821046693762780980}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -217,7 +217,7 @@ MonoBehaviour:
   speedCap: 6
   finalMove: {x: 0, y: 0, z: 0}
   crouched: 0
-  jumpForce: 200
+  jumpForce: 400
   sensitivity: 15
   standOffset: {x: 0, y: 0.5369999, z: 0}
   crouchOffset: {x: 0, y: 0, z: 0}
@@ -281,7 +281,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 53a1e3c0df459d64b8ade6f0d05fea5c, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 53a1e3c0df459d64b8ade6f0d05fea5c, type: 3}
       propertyPath: m_LocalPosition.x

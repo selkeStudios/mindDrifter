@@ -31,7 +31,7 @@ public class CannonBehaviour : MonoBehaviour, IInteractable
             Rigidbody rb_ = other.gameObject.GetComponent<Rigidbody>();
             other.gameObject.transform.parent = null;
             rb_.constraints = RigidbodyConstraints.None;
-            rb_.AddForce(transform.forward * rejected, ForceMode.Impulse);
+            rb_.AddForce(transform.right * rejected, ForceMode.Impulse);
         }
     }
 
@@ -42,7 +42,7 @@ public class CannonBehaviour : MonoBehaviour, IInteractable
             rb.constraints = RigidbodyConstraints.None;
             loaded.transform.parent = null;
             loaded.AddComponent<ProjectileBehaviour>();
-            rb.AddForce(transform.forward * fire, ForceMode.Impulse);
+            rb.AddForce(transform.right * fire, ForceMode.Impulse);
             rb = null;
             loaded = null;
         }

@@ -6,27 +6,47 @@ public class PlateBehaviour : MonoBehaviour
 {
     public GameObject obj;
     private IInteractable ib;
+    private MovingObjectBehaviour mb;
 
     private string co = "CreativeObject";
 
     void Start()
     {
         ib = obj.GetComponent<IInteractable>();
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag(co))
+        if (ib.GetType().ToString() == "MovingObjectBehaviour")
         {
-            ib.Interact();
+            mb = obj.GetComponent<MovingObjectBehaviour>();
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag(co) && other.gameObject.name == "Cube")
+        if (collision.gameObject.CompareTag(co))
         {
-            ib.Interact();
+            if (mb != null)
+            {
+                mb.active = true;
+            }
+            else
+            {
+                ib.Interact();
+            }
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.contactCount == 0)
+        {
+            if (mb != null)
+            {
+                mb.active = false;
+            }
+            else
+            {
+                ib.Interact();
+            }
         }
     }
 }
