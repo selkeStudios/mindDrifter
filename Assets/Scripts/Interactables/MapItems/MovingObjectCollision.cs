@@ -13,11 +13,17 @@ public class MovingObjectCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        collision.transform.SetParent(transform.parent);
+        if (collision.transform.parent != null)
+        {
+            collision.transform.SetParent(transform.parent);
+        }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        collision.transform.SetParent(null);
+        if (collision.transform.parent == transform)
+        {
+            collision.transform.SetParent(null);
+        }
     }
 }

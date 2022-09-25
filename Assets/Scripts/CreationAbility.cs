@@ -15,11 +15,6 @@ public class CreationAbility : MonoBehaviour
     public KeyCode create = KeyCode.C;
     public KeyCode hold = KeyCode.V;
     public KeyCode shapeChange = KeyCode.B;
-    public KeyCode scaleUp = KeyCode.LeftBracket;
-    public KeyCode scaleDown = KeyCode.RightBracket;
-    public KeyCode scaleX = KeyCode.LeftAlt;
-    public KeyCode scaleY = KeyCode.LeftShift;
-    public KeyCode scaleZ = KeyCode.LeftControl;
 
     //Held object data
     public GameObject obj;
@@ -83,16 +78,6 @@ public class CreationAbility : MonoBehaviour
                     //Rotate object left and right
                     objRot = Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens, 0);
                     obj.transform.localRotation *= objRot;
-
-                    //Scale object
-                    /*if (Input.GetKey(scaleUp) && !Input.GetKey(scaleDown))
-                    {
-                        ScaleObj(scaleUp);
-                    }
-                    else if (Input.GetKey(scaleDown) && !Input.GetKey(scaleUp))
-                    {
-                        ScaleObj(scaleDown);
-                    }*/
                 }
             }
             else if (!objHeld)
@@ -130,64 +115,6 @@ public class CreationAbility : MonoBehaviour
         objRB.constraints = RigidbodyConstraints.FreezeAll;
 
         objHeld = true;
-    }
-
-    //Scales the object based on what dimensions a player is trying to scale
-    void ScaleObj(KeyCode key)
-    {
-        int dir;
-        float x;
-        float y;
-        float z;
-        Vector3 deltaScale;
-
-        if (key == scaleUp)
-        {
-            dir = 1;
-        }
-        else
-        {
-            dir = -1;
-        }
-
-        if (Input.GetKey(scaleX) || Input.GetKey(scaleY) || Input.GetKey(scaleZ))
-        {
-            if (Input.GetKey(scaleX))
-            {
-                x = scaleSens * dir * Time.deltaTime;
-            }
-            else
-            {
-                x = 0;
-            }
-
-            if (Input.GetKey(scaleY))
-            {
-                y = scaleSens * dir * Time.deltaTime;
-            }
-            else
-            {
-                y = 0;
-            }
-
-            if (Input.GetKey(scaleZ))
-            {
-                z = scaleSens * dir * Time.deltaTime;
-            }
-            else
-            {
-                z = 0;
-            }
-
-            deltaScale = new Vector3(x, y, z);
-        }
-        else
-        {
-            deltaScale = Vector3.one * dir * scaleSens * Time.deltaTime;
-        }
-
-        objScale += deltaScale;
-        obj.transform.localScale = objScale;
     }
 
     //Changes the item desired (held or palette)
