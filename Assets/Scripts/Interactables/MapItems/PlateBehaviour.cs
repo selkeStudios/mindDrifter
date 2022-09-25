@@ -24,7 +24,7 @@ public class PlateBehaviour : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag(co))
+        if (other.CompareTag(co) && other.gameObject.name == "Cube")
         {
             ib.Interact();
         }

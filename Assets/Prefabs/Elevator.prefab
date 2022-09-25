@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7422919405818684986}
   - component: {fileID: 7422919405818684981}
   - component: {fileID: 7422919405818684980}
-  - component: {fileID: 7422919405818684983}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -63,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: da30c562d9eb05e4b97950e6b3370bf7, type: 2}
+  - {fileID: 2100000, guid: e18b6adf6a9c2a44984081f6eca7ca04, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98,23 +97,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7422919405818684983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7422919405818684977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3def24d72c5e4f2428e3dc0657a5494c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  axis: {x: 0, y: 1, z: 0}
-  positive: 1
-  moveSpeed: 5
-  maxDistance: 10
-  leeWay: 2
 --- !u!1 &7422919407702196398
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7422919407702196399}
+  - component: {fileID: 1674985178629258234}
   m_Layer: 0
   m_Name: Elevator
   m_TagString: Untagged
@@ -139,7 +122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7422919407702196398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.97469, y: -0.62000006, z: -8.097}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -147,3 +130,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1674985178629258234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422919407702196398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3def24d72c5e4f2428e3dc0657a5494c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {x: 0, y: 1, z: 0}
+  positive: 1
+  moveSpeed: 5
+  maxDistance: 10
+  leeWay: 2

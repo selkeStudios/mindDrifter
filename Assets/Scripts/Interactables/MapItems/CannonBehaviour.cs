@@ -5,7 +5,6 @@ using UnityEngine;
 public class CannonBehaviour : MonoBehaviour, IInteractable
 {
     public GameObject loaded;
-    public ProjectileBehaviour pb;
 
     public Vector3 loadPos;
     public float rejected;

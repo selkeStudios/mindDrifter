@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovingObjectBehaviour : MonoBehaviour, IInteractable
 {
-    private Transform parent;
+    private Collider col;
     private Vector3 initial;
 
     public Vector3 axis;
@@ -24,8 +24,8 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
     {
         dir = positive ? 1 : -1;
         axis = axis.normalized;
-        parent = transform.parent;
-        initial = parent.position;
+        col = GetComponentInChildren<BoxCollider>();
+        initial = transform.position;
     }
 
     // Update is called once per frame
@@ -35,13 +35,13 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
         {
             if (position < maxDistance)
             {
-                parent.position += axis * moveSpeed * dir * Time.deltaTime;
+                transform.position += axis * moveSpeed * dir * Time.deltaTime;
                 position += moveSpeed * Time.deltaTime;
             }
             else if (position > maxDistance)
             {
 
-                parent.position = initial + axis * maxDistance * dir;
+                transform.position = initial + axis * maxDistance * dir;
                 position = maxDistance;
             }
         }
@@ -53,12 +53,12 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
                 {
                     if (position > 0)
                     {
-                        parent.position -= axis * moveSpeed * dir * Time.deltaTime;
+                        transform.position -= axis * moveSpeed * dir * Time.deltaTime;
                         position -= moveSpeed * Time.deltaTime;
                     }
                     else if (position < 0)
                     {
-                        parent.position = initial;
+                        transform.position = initial;
                         position = 0;
                         timer = 0;
                     }
@@ -73,16 +73,20 @@ public class MovingObjectBehaviour : MonoBehaviour, IInteractable
 
     private void OnCollisionEnter(Collision collision)
     {
-        collision.transform.SetParent(parent);
+        collision.transform.SetParent(transform.GetChild(0));
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (active && timer !> 0)
+        collision.transform.SetParent(null);
+
+        if (active)
         {
-            Transform hit = collision.transform;
-            hit.SetParent(null);
             collision.gameObject.GetComponent<Rigidbody>().velocity += axis * dir * moveSpeed;
+        }
+        else if (timer >= leeWay)
+        {
+            collision.gameObject.GetComponent<Rigidbody>().velocity -= axis * dir * moveSpeed;
         }
     }
 
