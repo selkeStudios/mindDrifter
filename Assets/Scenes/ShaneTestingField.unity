@@ -384,6 +384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113137513}
   - component: {fileID: 113137514}
+  - component: {fileID: 113137515}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -427,6 +428,48 @@ MonoBehaviour:
   talking: 0
   player1: 1
   MindSwap: {fileID: 0}
+--- !u!114 &113137515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113137512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812a509afae459746978026d3caa72ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pause: 27
+  toggleSprint: 0
+  toggleCrouch: 0
+  keyNames:
+  - Forward
+  - Backward
+  - Left
+  - Right
+  - Sprint
+  - Crouch
+  - Jump
+  - Interact
+  - Pause
+  - PickUp
+  - Create
+  - ShapeSwap
+  - ScaleUp
+  - ScaleDown
+  keys: 77000000730000006100000064000000320100003001000020000000710000001b0000007600000063000000620000005d0000005b000000
+  defControls: 
+  labels: []
+  sens: Sensitivity
+  sensitivitySlider: {fileID: 0}
+  sensObj: {fileID: 0}
+  sensitivity: 0
+  setKeys: []
+  menus: []
+  menu: -1
+  settingKeys: 0
+  paused: 0
 --- !u!1 &188597216
 GameObject:
   m_ObjectHideFlags: 0

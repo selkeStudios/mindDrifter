@@ -17,9 +17,9 @@ public class CreationAbility : MonoBehaviour
     public KeyCode shapeChange = KeyCode.B;
     public KeyCode scaleUp = KeyCode.LeftBracket;
     public KeyCode scaleDown = KeyCode.RightBracket;
-    public KeyCode scaleX = KeyCode.LeftControl;
-    public KeyCode scaleY = KeyCode.LeftAlt;
-    public KeyCode scaleZ = KeyCode.LeftShift;
+    public KeyCode scaleX = KeyCode.LeftAlt;
+    public KeyCode scaleY = KeyCode.LeftShift;
+    public KeyCode scaleZ = KeyCode.LeftControl;
 
     //Held object data
     public GameObject obj;
