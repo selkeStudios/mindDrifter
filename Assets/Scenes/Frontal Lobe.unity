@@ -4075,6 +4075,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3251727435258750807, guid: af32331a485c66349a319240b0e55486, type: 3}
+      propertyPath: positive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251727435258750807, guid: af32331a485c66349a319240b0e55486, type: 3}
       propertyPath: maxRotation
       value: 62.61
       objectReference: {fileID: 0}
@@ -6098,6 +6102,10 @@ PrefabInstance:
     - target: {fileID: 3251727435258750806, guid: af32331a485c66349a319240b0e55486, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251727435258750807, guid: af32331a485c66349a319240b0e55486, type: 3}
+      propertyPath: positive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3251727435258750807, guid: af32331a485c66349a319240b0e55486, type: 3}
       propertyPath: maxRotation
