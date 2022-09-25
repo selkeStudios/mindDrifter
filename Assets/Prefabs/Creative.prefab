@@ -126,10 +126,10 @@ MonoBehaviour:
   vert: 0
   moveDir: {x: 0, y: 0, z: 0}
   moveForce: 100
-  walkSpeed: 6
-  sprintSpeed: 12
-  crouchSpeed: 4
-  speedCap: 6
+  walkSpeed: 8
+  sprintSpeed: 16
+  crouchSpeed: 6
+  speedCap: 8
   finalMove: {x: 0, y: 0, z: 0}
   crouched: 0
   jumpForce: 400

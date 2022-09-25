@@ -99,7 +99,6 @@ GameObject:
   - component: {fileID: 3594486966279727629}
   - component: {fileID: 3594486966279727631}
   - component: {fileID: 3594486966279727627}
-  - component: {fileID: 8250926488441607045}
   - component: {fileID: 3594486966279727628}
   m_Layer: 0
   m_Name: Logic
@@ -211,10 +210,10 @@ MonoBehaviour:
   vert: 0
   moveDir: {x: 0, y: 0, z: 0}
   moveForce: 100
-  walkSpeed: 6
-  sprintSpeed: 12
-  crouchSpeed: 4
-  speedCap: 6
+  walkSpeed: 8
+  sprintSpeed: 16
+  crouchSpeed: 6
+  speedCap: 8
   finalMove: {x: 0, y: 0, z: 0}
   crouched: 0
   jumpForce: 400
@@ -238,23 +237,8 @@ MonoBehaviour:
   pickupLayer:
     serializedVersion: 2
     m_Bits: 128
---- !u!114 &8250926488441607045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3594486966279727636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c0b1ca49672034699be6fab4fb205e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectableTag: Selectable
-  creativeTag: CreativeObject
-  highlightMaterial: {fileID: 0}
-  defaultMaterial: {fileID: 0}
-  cam: {fileID: 0}
+  minDist: 2
+  scrollSens: 1
 --- !u!114 &3594486966279727628
 MonoBehaviour:
   m_ObjectHideFlags: 0

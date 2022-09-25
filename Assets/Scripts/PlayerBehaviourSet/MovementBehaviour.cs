@@ -136,7 +136,7 @@ public class MovementBehaviour : MonoBehaviour
         {
             speedCap = crouchSpeed;
         }
-        else if (Input.GetKey(KeyCode.Z))
+        else if (Input.GetKey(KeyCode.LeftControl))
         {
             speedCap = sprintSpeed;
         }
