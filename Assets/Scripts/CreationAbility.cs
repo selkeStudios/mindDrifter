@@ -85,14 +85,14 @@ public class CreationAbility : MonoBehaviour
                     obj.transform.localRotation *= objRot;
 
                     //Scale object
-                    if (Input.GetKey(scaleUp) && !Input.GetKey(scaleDown))
+                    /*if (Input.GetKey(scaleUp) && !Input.GetKey(scaleDown))
                     {
                         ScaleObj(scaleUp);
                     }
                     else if (Input.GetKey(scaleDown) && !Input.GetKey(scaleUp))
                     {
                         ScaleObj(scaleDown);
-                    }
+                    }*/
                 }
             }
             else if (!objHeld)
