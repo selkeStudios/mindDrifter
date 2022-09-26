@@ -32,6 +32,8 @@ public class MovementBehaviour : MonoBehaviour
     public bool crouched = false;
 
     public float jumpForce = 200f;
+    public float jumpTime;
+    public float jumpTime_;
     public float jumpOut;
     public float jumpTimer;
 
@@ -49,6 +51,7 @@ public class MovementBehaviour : MonoBehaviour
 
     void Awake()
     {
+        jumpTime_ = jumpTime / 2;
         mb = FindObjectOfType<MenuBehaviour>();
         gc = FindObjectOfType<GameController>();
         rb = GetComponent<Rigidbody>();
@@ -107,7 +110,7 @@ public class MovementBehaviour : MonoBehaviour
     /// </summary>
     void FixedUpdate()
     {
-        if (canMove)
+        if (canMove && (cb.grounded || cb.wallHop))
         {
             Movement();
         }
@@ -152,17 +155,43 @@ public class MovementBehaviour : MonoBehaviour
     void Movement()
     {
         //Set speed
-        if (crouched == true)
+        if (crouched == true && speedCap != crouchSpeed)
         {
             speedCap = crouchSpeed;
+
+            if (jumpOut == jumpTime_)
+            {
+                if (jumpTimer > 0)
+                {
+                    jumpTimer *= jumpTime;
+                }
+
+                jumpOut = jumpTime;
+            }
+            
         }
-        else if (Input.GetKey(KeyCode.LeftControl))
+        else if (Input.GetKey(KeyCode.LeftControl) && speedCap != sprintSpeed)
         {
             speedCap = sprintSpeed;
+            jumpOut = jumpTime_;
+            if (jumpTimer > 0)
+            {
+                jumpTimer /= jumpTime;
+            }
         }
-        else
+        else if (speedCap != walkSpeed)
         {
             speedCap = walkSpeed;
+
+            if (jumpOut == jumpTime_)
+            {
+                if (jumpTimer > 0)
+                {
+                    jumpTimer *= jumpTime;
+                }
+
+                jumpOut = jumpTime;
+            }
         }
 
         //Apply speed
@@ -208,7 +237,7 @@ public class MovementBehaviour : MonoBehaviour
             if (cb.grounded == true)
             {
                 cb.grounded = false;
-                rb.velocity *= jumpTimer / jumpOut;
+                rb.velocity = rb.velocity.normalized * speedCap * jumpTimer / jumpOut;
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             }
         }

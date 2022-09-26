@@ -200,7 +200,7 @@ MonoBehaviour:
   hori: 0
   vert: 0
   moveDir: {x: 0, y: 0, z: 0}
-  moveForce: 80
+  moveForce: 100
   walkSpeed: 8
   sprintSpeed: 16
   crouchSpeed: 6
@@ -208,8 +208,11 @@ MonoBehaviour:
   finalMove: {x: 0, y: 0, z: 0}
   jumpDir: {x: 0, y: 0, z: 0}
   crouched: 0
-  jumpOutScalar: 2
   jumpForce: 400
+  jumpTime: 1
+  jumpTime_: 0
+  jumpOut: 1
+  jumpTimer: 0
   sensitivity: 15
   standOffset: {x: 0, y: 0.5369999, z: 0}
   crouchOffset: {x: 0, y: 0, z: 0}
