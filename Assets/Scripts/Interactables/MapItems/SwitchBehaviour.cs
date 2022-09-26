@@ -6,7 +6,6 @@ public class SwitchBehaviour : MonoBehaviour, IInteractable
 {
     public GameObject[] objs;
     private IInteractable[] ib;
-    public float rotation;
 
     private bool activated = false;
 
@@ -24,8 +23,6 @@ public class SwitchBehaviour : MonoBehaviour, IInteractable
     {
         if (!activated)
         {
-            transform.parent.Rotate(Vector3.up * rotation);
-
             for (int x = 0; x < ib.Length; x++)
             {
                 ib[x].Interact();
