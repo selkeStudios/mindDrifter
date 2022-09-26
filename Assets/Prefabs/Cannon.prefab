@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loaded: {fileID: 0}
-  loadPos: {x: 0, y: 0, z: 3}
+  loadPos: {x: 4, y: 0.21, z: 0}
   rejected: 100
   fire: 1000
 --- !u!64 &5720585724764259523
@@ -240,9 +240,9 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5881200523806452397}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.61
-  m_Height: 1
+  m_Height: 2.67
   m_Direction: 0
-  m_Center: {x: 4.11, y: 0.21, z: 0}
+  m_Center: {x: 3.31, y: 0.21, z: 0}
