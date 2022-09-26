@@ -27,8 +27,11 @@ public class MovementBehaviour : MonoBehaviour
 
     public Vector3 finalMove;
 
+    public Vector3 jumpDir;
+
     public bool crouched = false;
 
+    public float jumpOutScalar;
     public float jumpForce = 200f;
 
     public float sensitivity;
@@ -187,6 +190,9 @@ public class MovementBehaviour : MonoBehaviour
             //Regular jump
             if (cb.grounded == true)
             {
+                cb.grounded = false;
+                jumpDir = new Vector3(rb.velocity.x, 0, rb.velocity.z) * ((rb.velocity.magnitude / speedCap) * jumpOutScalar);
+                rb.velocity = jumpDir;
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             }
         }

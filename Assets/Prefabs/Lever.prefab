@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4248611552028586433}
   - component: {fileID: 1404542110984781659}
   - component: {fileID: 11745662533946394}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 1312156982548051102}
   - component: {fileID: 99610080998901727}
   - component: {fileID: 3438630363345221085}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

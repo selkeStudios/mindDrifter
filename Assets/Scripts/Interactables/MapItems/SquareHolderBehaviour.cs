@@ -16,9 +16,7 @@ public class SquareHolderBehaviour : MonoBehaviour
         {
             obj = other.gameObject;
             obj.transform.parent = null;
-            objRB = obj.GetComponent<Rigidbody>();
-
-            objRB.constraints = RigidbodyConstraints.FreezeAll;
+            Destroy(obj.GetComponent<Rigidbody>());
 
             obj.transform.localScale = transform.localScale;
             obj.transform.position = transform.position;
