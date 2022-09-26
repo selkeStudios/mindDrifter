@@ -31,8 +31,9 @@ public class MovementBehaviour : MonoBehaviour
 
     public bool crouched = false;
 
-    public float jumpOutScalar;
     public float jumpForce = 200f;
+    public float jumpOut;
+    public float jumpTimer;
 
     public float sensitivity;
 
@@ -82,6 +83,22 @@ public class MovementBehaviour : MonoBehaviour
             CameraMovement();
             Crouch();
             Jump();
+
+            if (moveDir != Vector3.zero && cb.grounded)
+            {
+                if (jumpTimer < jumpOut)
+                {
+                    jumpTimer += Time.deltaTime;
+                }
+                else if (jumpTimer > jumpOut)
+                {
+                    jumpTimer = jumpOut;
+                }
+            }
+            else if (jumpTimer > 0 || cb.grounded == false)
+            {
+                jumpTimer = 0;
+            }
         }
     }
 
@@ -180,7 +197,7 @@ public class MovementBehaviour : MonoBehaviour
             finalMove = Vector3.zero;
         }
 
-        rb.AddForce(finalMove * moveForce, ForceMode.Impulse);
+        rb.AddForce(finalMove * moveForce, ForceMode.Acceleration);
     }
 
     void Jump()
@@ -191,8 +208,7 @@ public class MovementBehaviour : MonoBehaviour
             if (cb.grounded == true)
             {
                 cb.grounded = false;
-                jumpDir = new Vector3(rb.velocity.x, 0, rb.velocity.z) * ((rb.velocity.magnitude / speedCap) * jumpOutScalar);
-                rb.velocity = jumpDir;
+                rb.velocity *= jumpTimer / jumpOut;
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             }
         }

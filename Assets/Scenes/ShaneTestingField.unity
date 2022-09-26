@@ -4310,6 +4310,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3594486966279727631, guid: 2fc936db87cc7fb4f8f7c7e679ab2ce9, type: 3}
+      propertyPath: jumpOut
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3594486966279727633, guid: 2fc936db87cc7fb4f8f7c7e679ab2ce9, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4498,6 +4502,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4679691402288179680, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
+      propertyPath: jumpOut
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4679691402288179682, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
       propertyPath: m_Name
       value: Creative
