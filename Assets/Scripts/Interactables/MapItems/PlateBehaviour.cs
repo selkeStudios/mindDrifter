@@ -22,7 +22,7 @@ public class PlateBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag(co))
+        if (collision.gameObject.CompareTag(co) && collision.gameObject.name.Contains("SquarePyramid"))
         {
             if (mb != null)
             {

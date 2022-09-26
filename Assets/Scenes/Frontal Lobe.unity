@@ -2236,6 +2236,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 686811393255148915, guid: a3ceff218879bfd4a86f30c4ccdd978d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49ace3e628cef8d44b247699d5521c0a, type: 2}
     - target: {fileID: 6152652148029158712, guid: a3ceff218879bfd4a86f30c4ccdd978d, type: 3}
       propertyPath: m_Name
       value: Plate (1)
@@ -5232,6 +5236,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 686811393255148915, guid: a3ceff218879bfd4a86f30c4ccdd978d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49ace3e628cef8d44b247699d5521c0a, type: 2}
     - target: {fileID: 6152652148029158712, guid: a3ceff218879bfd4a86f30c4ccdd978d, type: 3}
       propertyPath: m_Name
       value: Plate
@@ -8464,7 +8472,7 @@ PrefabInstance:
     - target: {fileID: 7422919405818684981, guid: 4ccd9bb225635d24c94d9442f190a5fd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e18b6adf6a9c2a44984081f6eca7ca04, type: 2}
+      objectReference: {fileID: 2100000, guid: 49ace3e628cef8d44b247699d5521c0a, type: 2}
     - target: {fileID: 7422919407702196398, guid: 4ccd9bb225635d24c94d9442f190a5fd, type: 3}
       propertyPath: m_Name
       value: Elevator (2)
@@ -9459,7 +9467,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e18b6adf6a9c2a44984081f6eca7ca04, type: 2}
+  - {fileID: 2100000, guid: 49ace3e628cef8d44b247699d5521c0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

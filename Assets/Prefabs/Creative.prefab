@@ -160,11 +160,6 @@ MonoBehaviour:
   create: 99
   hold: 118
   shapeChange: 98
-  scaleUp: 91
-  scaleDown: 93
-  scaleX: 306
-  scaleY: 308
-  scaleZ: 304
   obj: {fileID: 0}
   objRB: {fileID: 0}
   objPos: {x: 0, y: 0, z: 2}
@@ -325,14 +320,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6855361253967212245, guid: 107c4372a98480c459867463a9b4f3c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d20d9e6815c56ad4892f92943e64c671, type: 2}
     - target: {fileID: -1156194138497799731, guid: 107c4372a98480c459867463a9b4f3c1, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 04cb0c816564da74989442b83dcb4c08, type: 2}
+      objectReference: {fileID: 2100000, guid: 1c5fe2a258ede204cad1fabda7af9e38, type: 2}
+    - target: {fileID: 736951247798992728, guid: 107c4372a98480c459867463a9b4f3c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d20d9e6815c56ad4892f92943e64c671, type: 2}
     - target: {fileID: 919132149155446097, guid: 107c4372a98480c459867463a9b4f3c1, type: 3}
       propertyPath: m_Name
       value: CreativeCharacter_LP
       objectReference: {fileID: 0}
+    - target: {fileID: 8228819247545029057, guid: 107c4372a98480c459867463a9b4f3c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df4f5ed08a09c2e4aac90ad62a64256e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107c4372a98480c459867463a9b4f3c1, type: 3}
 --- !u!4 &4677323150419553636 stripped

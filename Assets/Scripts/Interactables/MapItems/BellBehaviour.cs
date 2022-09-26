@@ -21,7 +21,7 @@ public class BellBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == tag_)
+        if (collision.gameObject.CompareTag(tag_) && collision.gameObject.name.Contains("Cylinder"))
         {
             foreach (IInteractable ii in ib)
             {
