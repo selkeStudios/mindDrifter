@@ -19,6 +19,8 @@ public class GameController : MonoBehaviour
     /// </summary>
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+
         player[0] = GameObject.Find("Logic").transform.GetChild(0).gameObject;
         player[1] = GameObject.Find("Creative").transform.GetChild(0).gameObject;
         mb[0] = player[0].transform.parent.GetComponent<MovementBehaviour>();

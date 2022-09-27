@@ -1378,18 +1378,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3594486966187966856, guid: 2fc936db87cc7fb4f8f7c7e679ab2ce9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3594486966187966856, guid: 2fc936db87cc7fb4f8f7c7e679ab2ce9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3594486966279727631, guid: 2fc936db87cc7fb4f8f7c7e679ab2ce9, type: 3}
-      propertyPath: jumpForce
-      value: 400
-      objectReference: {fileID: 0}
     - target: {fileID: 3594486966279727633, guid: 2fc936db87cc7fb4f8f7c7e679ab2ce9, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -1438,8 +1426,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Logic
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fc936db87cc7fb4f8f7c7e679ab2ce9, type: 3}
 --- !u!1 &343560173
 GameObject:
@@ -4315,10 +4302,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4679691402288179680, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
-      propertyPath: jumpForce
-      value: 400
-      objectReference: {fileID: 0}
     - target: {fileID: 4679691402288179682, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
       propertyPath: m_Name
       value: Creative
@@ -4365,14 +4348,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4679691402288179707, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4679691402873054879, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4679691402873054879, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2479549912327172110
 Transform:
@@ -125,7 +125,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1997012032957680766, guid: a019c1a4640353449ad8387eaccad0e7, type: 3}
 --- !u!1001 &283918539666642424
@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -153,15 +153,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2146
+      value: -2143
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -199,6 +199,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &322595702998250003 stripped
@@ -206,6 +210,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 283918539666642424}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1094875784796399785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 283918539666642424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7495446511323883862
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094875784796399785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &478486389383725051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -219,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -235,11 +258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -908
+      value: -912.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -277,6 +300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &83692263085840400 stripped
@@ -284,6 +311,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 478486389383725051}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &748306756985045674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 478486389383725051}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &498402487931464926
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748306756985045674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &518872914875576738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,7 +343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -313,11 +359,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1672
+      value: -1676.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -355,6 +401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &52303045505553993 stripped
@@ -362,6 +412,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 518872914875576738}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &860752657851600115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 518872914875576738}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &9038777659714970409
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860752657851600115}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &1320040026622648447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -391,11 +460,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1228
+      value: -1232.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -433,6 +502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &1574852582518458260 stripped
@@ -440,6 +513,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 1320040026622648447}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2202489710372117806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 1320040026622648447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5313129334456886927
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202489710372117806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194020205821288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -453,7 +545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -469,11 +561,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -553
+      value: -557.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -511,6 +603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549914103552643 stripped
@@ -518,6 +614,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194020205821288}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196688430776377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194020205821288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4213435113243157847
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196688430776377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194020400455123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -531,7 +646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -547,11 +662,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 0.4000473
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -589,6 +704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549913942211128 stripped
@@ -596,6 +715,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194020400455123}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196688758071426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194020400455123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &341635332558894889
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196688758071426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194020593576573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -609,7 +747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930489
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalScale.y
@@ -621,15 +759,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 300.13107
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298.01395
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalRotation.w
@@ -667,6 +805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrack1A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
 --- !u!4 &2479549913749081494 stripped
@@ -674,6 +816,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
   m_PrefabInstance: {fileID: 2730194020593576573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196688818673452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
+  m_PrefabInstance: {fileID: 2730194020593576573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &255573320303261623
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196688818673452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5646249688101152817, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
 --- !u!1001 &2730194020807969888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -687,7 +848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -703,11 +864,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -733
+      value: -737.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -745,6 +906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549913493072779 stripped
@@ -752,6 +917,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194020807969888}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196688092901681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194020807969888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7970296652492115300
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196688092901681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194020820549586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -765,7 +949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -781,11 +965,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -371
+      value: -375.59995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -823,6 +1007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549913488824377 stripped
@@ -830,6 +1018,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194020820549586}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196688105456259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194020820549586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8971219323891355831
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196688105456259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194020938099958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -843,7 +1050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930489
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalScale.y
@@ -855,15 +1062,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.0784645
+      value: -0.014584303
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
       propertyPath: m_LocalRotation.w
@@ -901,6 +1108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrack1A
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
 --- !u!4 &2479549913404558109 stripped
@@ -908,6 +1119,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
   m_PrefabInstance: {fileID: 2730194020938099958}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196688222491047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
+  m_PrefabInstance: {fileID: 2730194020938099958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &9123516471781945234
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196688222491047}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5646249688101152817, guid: 4d8c5f930a9ec8a46a29a76cc7df8129, type: 3}
 --- !u!1001 &2730194020954581728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -921,7 +1151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -933,15 +1163,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -559
+      value: -556.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -979,6 +1209,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549913354587403 stripped
@@ -986,6 +1220,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194020954581728}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196688239630257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194020954581728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3613091388275254537
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196688239630257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194021038739845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -999,7 +1252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1011,15 +1264,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -0.00012207031
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1057,6 +1310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549913303987822 stripped
@@ -1064,6 +1321,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194021038739845}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196688189058260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194021038739845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4457241029610743119
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196688189058260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194021105064700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1077,7 +1353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1089,15 +1365,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -737
+      value: -734.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1135,6 +1411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549913237667095 stripped
@@ -1142,6 +1422,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194021105064700}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196688389072813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194021105064700}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3010878435033850279
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196688389072813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194021397271032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1155,7 +1454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1167,15 +1466,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -375
+      value: -372.00012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1213,6 +1512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549912945718803 stripped
@@ -1220,6 +1523,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194021397271032}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196687474240681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194021397271032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4423349997211500804
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196687474240681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194021721131908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1233,7 +1555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1245,15 +1567,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -189
+      value: -186.00012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1291,6 +1613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549912579583087 stripped
@@ -1298,6 +1624,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194021721131908}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196686858581717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194021721131908}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1448592973052770878
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196686858581717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2730194021725960223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1311,7 +1656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1327,11 +1672,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -178
+      value: -182.59995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1369,6 +1714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2479549912583479284 stripped
@@ -1376,6 +1725,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 2730194021725960223}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2964196686862468430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2730194021725960223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4049028848984573149
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964196686862468430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &2917273272517328857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1389,7 +1757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1405,11 +1773,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1941
+      value: -1945.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1447,8 +1815,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+--- !u!1 &2647365907133743752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 2917273272517328857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &9199805335571998594
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2647365907133743752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &3456096998747248690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
@@ -1467,7 +1858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1483,11 +1874,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1387
+      value: -1391.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1525,8 +1916,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+--- !u!1 &2566011437700066454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 3412923809483624903}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6153448083572882997
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2566011437700066454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &2942993926598161964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
@@ -1545,7 +1959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1557,15 +1971,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1092
+      value: -1089.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1603,6 +2017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &4020202794872630581 stripped
@@ -1610,6 +2028,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 3476805683529583326}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4359890746486699919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 3476805683529583326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3870096429705289677
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4359890746486699919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &3716579298263592981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1623,7 +2060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1639,11 +2076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1819
+      value: -1823.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1681,6 +2118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &3754111286954104830 stripped
@@ -1688,6 +2129,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 3716579298263592981}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4562877596963917124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 3716579298263592981}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5115271314040665381
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4562877596963917124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &4101342701566175296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1701,7 +2161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1713,15 +2173,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1253
+      value: -1250.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1759,8 +2219,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+--- !u!1 &3759252953881580817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 4101342701566175296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2195276481574539950
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3759252953881580817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &4566751213500190635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
@@ -1779,7 +2262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1791,15 +2274,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1417
+      value: -1414.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1837,8 +2320,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+--- !u!1 &3498472857764051626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 4344983352543152123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3165653219427115859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3498472857764051626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &4307343587289292816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
@@ -1857,7 +2363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1869,15 +2375,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1586
+      value: -1583.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1915,8 +2421,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+--- !u!1 &4629126990848339727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 5547484390046372446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &960414434975080625
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4629126990848339727}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &5437576293396805045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
@@ -1935,7 +2464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1951,11 +2480,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1510
+      value: -1514.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1993,6 +2522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &6174798568981112355 stripped
@@ -2000,6 +2533,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 5925597913585074632}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6843952156115336345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 5925597913585074632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6055437954340937324
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843952156115336345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &6918144042976067394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2013,7 +2565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -2025,15 +2577,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2020
+      value: -2017.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2071,6 +2623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &7460377877325797545 stripped
@@ -2078,6 +2634,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 6918144042976067394}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7837185341762011667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 6918144042976067394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1172684189343288297
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7837185341762011667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &7896072741707692845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2091,7 +2666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -2107,11 +2682,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2125
+      value: -2129.5999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2149,8 +2724,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+--- !u!1 &7013535647858984572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 7896072741707692845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7715047979799101848
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013535647858984572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &7646766026005994694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
@@ -2169,7 +2767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -2181,15 +2779,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1754
+      value: -1751.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2227,8 +2825,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+--- !u!1 &7112626532893838159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 7959067755354453534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5741599513524288523
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7112626532893838159}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &7637806489865261557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
@@ -2247,7 +2868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -2259,15 +2880,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -916
+      value: -913.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2305,8 +2926,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+--- !u!1 &7183065799072663443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 8029365736301853378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6462539325221507405
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7183065799072663443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &7558360576478125353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
@@ -2325,7 +2969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -2341,11 +2985,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1072
+      value: -1076.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298
+      value: -300.00015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2383,6 +3027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &8327227737428219513 stripped
@@ -2390,6 +3038,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 8366273021350850962}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8708713928781204675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 8366273021350850962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3532192769805537814
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8708713928781204675}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!1001 &8431631055378049241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2403,7 +3070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9930487
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalScale.y
@@ -2415,15 +3082,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.302941
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1895
+      value: -1892.0001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.06456
+      value: -0.00052058697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2461,6 +3128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FloorCrackWall1A (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdc112a06b8fd4498e069094753022b, type: 3}
 --- !u!4 &8253289114632752946 stripped
@@ -2468,3 +3139,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: acdc112a06b8fd4498e069094753022b, type: 3}
   m_PrefabInstance: {fileID: 8431631055378049241}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8773647678962193800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: acdc112a06b8fd4498e069094753022b, type: 3}
+  m_PrefabInstance: {fileID: 8431631055378049241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8884713325158956290
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8773647678962193800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876059094881537214, guid: acdc112a06b8fd4498e069094753022b, type: 3}
