@@ -15,7 +15,7 @@ public class SquareHolderBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag(tag_) && other.gameObject.name.Contains(name_))
         {
             obj = other.gameObject;
-            obj.transform.parent = null;
+            obj.transform.parent = transform.parent;
             Destroy(obj.GetComponent<Rigidbody>());
 
             obj.transform.localScale = transform.localScale;

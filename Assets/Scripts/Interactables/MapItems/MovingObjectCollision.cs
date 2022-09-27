@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class MovingObjectCollision : MonoBehaviour
 {
-    private MovingObjectBehaviour mb;
-
-    void Start()
-    {
-        mb = transform.parent.GetComponent<MovingObjectBehaviour>();
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.parent != null)
+        if (collision.transform.parent == null)
         {
             collision.transform.SetParent(transform.parent);
         }
@@ -21,7 +14,7 @@ public class MovingObjectCollision : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.transform.parent == transform)
+        if (collision.transform.parent == transform.parent)
         {
             collision.transform.SetParent(null);
         }

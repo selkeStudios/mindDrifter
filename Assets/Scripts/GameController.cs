@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameObject[] player = new GameObject[2];
+    public GameObject[] child = new GameObject[2];
     public MovementBehaviour[] mb = new MovementBehaviour[2];
     public bool talking = false;
     public bool player1 = true;
@@ -46,6 +47,16 @@ public class GameController : MonoBehaviour
 
             for (int x = 0; x < 2; x++)
             {
+                if (player[x].transform.childCount != 0)
+                {
+                    child[x] = player[x].transform.GetChild(0).gameObject;
+                    child[x].transform.SetParent(transform);
+                }
+                else if (child[x] != null)
+                {
+                    child[x].transform.SetParent(player[x].transform);
+                }
+
                 player[x].SetActive(!player[0].activeSelf);
                 mb[x].canMove = !mb[0].canMove;
             }

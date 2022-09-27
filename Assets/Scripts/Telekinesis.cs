@@ -37,6 +37,10 @@ public class Telekinesis : MonoBehaviour
         {
             DropObj();
         }
+        else if (obj != null && obj.transform.parent != cam.transform)
+        {
+            DropObj();
+        }
 
         if (objHeld)
         {
