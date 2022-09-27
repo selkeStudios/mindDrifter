@@ -47,14 +47,16 @@ public class GameController : MonoBehaviour
 
             for (int x = 0; x < 2; x++)
             {
-                if (player[x].transform.childCount != 0)
+                if (child[x] != null)
                 {
-                    child[x] = player[x].transform.GetChild(0).gameObject;
-                    child[x].transform.SetParent(transform);
-                }
-                else if (child[x] != null)
-                {
-                    child[x].transform.SetParent(player[x].transform);
+                    if (player[x].transform.childCount != 0 && player[x].transform.GetChild(0) == child[x].transform)
+                    {
+                        child[x].transform.SetParent(player[x].transform.parent);
+                    }
+                    else if (child[x].transform.parent == player[x].transform.parent)
+                    {
+                        child[x].transform.SetParent(player[x].transform);
+                    }
                 }
 
                 player[x].SetActive(!player[0].activeSelf);

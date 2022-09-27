@@ -9,6 +9,7 @@ public class CreationAbility : MonoBehaviour
     public int selectedShape = 0;
 
     public MovementBehaviour mb;
+    public GameController gc;
     public Camera cam;
 
     //Keycodes
@@ -31,6 +32,7 @@ public class CreationAbility : MonoBehaviour
     void Awake()
     {
         mb = GetComponent<MovementBehaviour>();
+        gc = FindObjectOfType<GameController>();
         cam = GetComponentInChildren<Camera>();
     }
 
@@ -64,6 +66,8 @@ public class CreationAbility : MonoBehaviour
                 if (Input.GetKeyDown(hold))
                 {
                     obj.transform.parent = null;
+                    gc.child[1] = null;
+                    obj = null;
 
                     objRB.constraints = RigidbodyConstraints.None;
 
@@ -106,6 +110,7 @@ public class CreationAbility : MonoBehaviour
     void HoldObj(GameObject obj_)
     {
         obj = obj_.gameObject;
+        gc.child[1] = obj;
         objRB = obj.GetComponent<Rigidbody>();
         obj.transform.SetParent(cam.transform);
 

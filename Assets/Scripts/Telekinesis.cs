@@ -3,6 +3,8 @@ using UnityEngine;
 public class Telekinesis : MonoBehaviour
 {
     public Camera cam;
+    public GameController gc;
+    public MovementBehaviour mb;
     private GameObject obj;
     private Rigidbody objRB;
     public LayerMask pickupLayer;
@@ -15,45 +17,52 @@ public class Telekinesis : MonoBehaviour
 
     private bool objHeld = false;
 
-    // gets the camera
-    void Start()
+    void Awake()
     {
+        mb = GetComponent<MovementBehaviour>();
+        gc = FindObjectOfType<GameController>();
         cam = GetComponentInChildren<Camera>();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (mb.canMove)
         {
-            RaycastHit hit;
-
-            //uses camera position to check for objects in pickup layer, LMB press/hold holds object + release lets go
-            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100f, pickupLayer))
+            if (Input.GetMouseButtonDown(0))
             {
-                HoldObj(hit.transform.gameObject);
+                RaycastHit hit;
+
+                //uses camera position to check for objects in pickup layer, LMB press/hold holds object + release lets go
+                if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100f, pickupLayer))
+                {
+                    HoldObj(hit.transform.gameObject);
+                }
             }
-        }
-        else if (objHeld && Input.GetMouseButtonUp(0))
-        {
-            DropObj();
-        }
-        else if (obj != null && obj.transform.parent != cam.transform)
-        {
-            DropObj();
-        }
-
-        if (objHeld)
-        {
-            float scroll = Input.mouseScrollDelta.y;
-
-            if (scroll != 0 && (objDist >= minDist || Input.mouseScrollDelta.y > 0))
+            else if (objHeld && Input.GetMouseButtonUp(0))
             {
-                objDist = objPos.magnitude + scroll * scrollSens;
-                objPos = objPos.normalized * objDist;
-                obj.transform.localPosition = objPos;
+                DropObj();
             }
 
-            oldPos = obj.transform.position;
+            if (obj != null)
+            {
+                if (obj.transform.parent == cam.transform)
+                {
+                    float scroll = Input.mouseScrollDelta.y;
+
+                    if (scroll != 0 && (objDist >= minDist || Input.mouseScrollDelta.y > 0))
+                    {
+                        objDist = objPos.magnitude + scroll * scrollSens;
+                        objPos = objPos.normalized * objDist;
+                        obj.transform.localPosition = objPos;
+                    }
+
+                    oldPos = obj.transform.position;
+                }
+                else
+                {
+                    DropObj();
+                }
+            }
         }
     }
 
@@ -61,6 +70,7 @@ public class Telekinesis : MonoBehaviour
     void HoldObj(GameObject obj_)
     {
         obj = obj_.gameObject;
+        gc.child[0] = obj;
         objRB = obj.GetComponent<Rigidbody>();
         obj.transform.SetParent(cam.transform);
 
@@ -85,6 +95,8 @@ public class Telekinesis : MonoBehaviour
             objRB.velocity = obj.transform.position - oldPos;
         }
 
+        objRB = null;
+        gc.child[0] = null;
         obj = null;
     }
 }

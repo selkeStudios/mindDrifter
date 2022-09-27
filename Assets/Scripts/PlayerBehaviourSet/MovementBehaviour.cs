@@ -174,9 +174,15 @@ public class MovementBehaviour : MonoBehaviour
         {
             speedCap = sprintSpeed;
             jumpOut = jumpTime_;
-            if (jumpTimer > 0)
+
+            if (jumpOut == jumpTime)
             {
-                jumpTimer /= jumpTime;
+                if (jumpTimer > 0)
+                {
+                    jumpTimer /= jumpTime;
+                }
+
+                jumpOut = jumpTime;
             }
         }
         else if (speedCap != walkSpeed)
