@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 255e74c4aa97266498be56edf9c373b8
   - enabled: 1
+    path: Assets/Scenes/Frontal Lobe.unity
+    guid: 8a1c21fe69b6484449f67d796e1b4efe
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
