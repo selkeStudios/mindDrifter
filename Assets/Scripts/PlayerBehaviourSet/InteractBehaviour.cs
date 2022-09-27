@@ -11,12 +11,16 @@ public class InteractBehaviour : MonoBehaviour
 
     public float reach;
 
+    void Awake()
+    {
+        cam = GetComponentInChildren<Camera>();
+    }
+
     void Start()
     {
         gc = FindObjectOfType<GameController>();
         dm = FindObjectOfType<DialogueManager>();
         mb = GetComponent<MovementBehaviour>();
-        cam = GetComponentInChildren<Camera>();
     }
 
     void LateUpdate()
