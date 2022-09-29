@@ -56,42 +56,42 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/CreationAbility.cs" />
-    <Compile Include="Assets/Scripts/Interactables/MapItems/TerminalManager.cs" />
-    <Compile Include="Assets/Scripts/Interactables/MapItems/MovingObjectBehaviour.cs" />
-    <Compile Include="Assets/Scripts/Interactables/MapItems/HingedObjectBehaviour.cs" />
-    <Compile Include="Assets/Scripts/PlayerBehaviourSet/InteractBehaviour.cs" />
     <Compile Include="Assets/Scripts/CheckpointBehaviour.cs" />
-    <Compile Include="Assets/Scripts/Telekinesis.cs" />
+    <Compile Include="Assets/Scripts/PlayerBehaviourSet/Telekinesis.cs" />
     <Compile Include="Assets/Scripts/CheckpointManager.cs" />
-    <Compile Include="Assets/Scripts/Unused/Pickup.cs" />
     <Compile Include="Assets/Scripts/Interactables/MapItems/CannonBehaviour.cs" />
     <Compile Include="Assets/Scripts/Interactables/MapItems/LavaBehaviour.cs" />
     <Compile Include="Assets/Scripts/Unused/MainMenuBehaviour.cs" />
+    <Compile Include="Assets/Scripts/SquareHolderBehaviour.cs" />
+    <Compile Include="Assets/Scripts/Interactables/Dialogue/Dialogue.cs" />
+    <Compile Include="Assets/Scripts/PlayerBehaviourSet/Both/CollisionBehaviour.cs" />
+    <Compile Include="Assets/Scripts/Unused/P1BoxBehaviour.cs" />
+    <Compile Include="Assets/Scripts/ReturnBehaviour.cs" />
+    <Compile Include="Assets/Scripts/Interactables/Dialogue/DialogueTrigger.cs" />
+    <Compile Include="Assets/Scripts/Interactables/MapItems/PlateBehaviour.cs" />
+    <Compile Include="Assets/Scripts/Interactables/MapItems/MovingObjectCollision.cs" />
+    <Compile Include="Assets/Scripts/PlayerBehaviourSet/CreationAbility.cs" />
+    <Compile Include="Assets/Scripts/Interactables/MapItems/TerminalManager.cs" />
+    <Compile Include="Assets/Scripts/Interactables/MapItems/MovingObjectBehaviour.cs" />
+    <Compile Include="Assets/Scripts/Interactables/MapItems/HingedObjectBehaviour.cs" />
+    <Compile Include="Assets/Scripts/PlayerBehaviourSet/Both/InteractBehaviour.cs" />
+    <Compile Include="Assets/Scripts/Unused/Pickup.cs" />
     <Compile Include="Assets/Scripts/Unused/ArrowWallMovement.cs" />
     <Compile Include="Assets/Scripts/Interactables/MapItems/SwitchBehaviour.cs" />
     <Compile Include="Assets/Scripts/SelectionManager.cs" />
     <Compile Include="Assets/Scripts/Interactables/MapItems/BellBehaviour.cs" />
-    <Compile Include="Assets/Scripts/Interactables/MapItems/SquareHolderBehaviour.cs" />
     <Compile Include="Assets/mesh.cs" />
-    <Compile Include="Assets/Scripts/Interactables/Dialogue/Dialogue.cs" />
-    <Compile Include="Assets/Scripts/PlayerBehaviourSet/CollisionBehaviour.cs" />
     <Compile Include="Assets/Scripts/Interactables/MapItems/TerminalBehaviour.cs" />
     <Compile Include="Assets/Scripts/Interactables/Dialogue/DialogueManager.cs" />
     <Compile Include="Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/Scripts/Interactables/IInteractable.cs" />
     <Compile Include="Assets/Scripts/Unused/PlayerControl.cs" />
-    <Compile Include="Assets/Scripts/Unused/P1BoxBehaviour.cs" />
     <Compile Include="Assets/Scripts/GameEnd.cs" />
     <Compile Include="Assets/Scripts/Unused/P2Spherebehaviour.cs" />
-    <Compile Include="Assets/Scripts/PlayerBehaviourSet/MovementBehaviour.cs" />
-    <Compile Include="Assets/Scripts/ReturnBehaviour.cs" />
-    <Compile Include="Assets/Scripts/Interactables/Dialogue/DialogueTrigger.cs" />
+    <Compile Include="Assets/Scripts/PlayerBehaviourSet/Both/MovementBehaviour.cs" />
     <Compile Include="Assets/Scripts/ProjectileBehaviour.cs" />
     <Compile Include="Assets/Scripts/Unused/CameraScript.cs" />
-    <Compile Include="Assets/Scripts/Interactables/MapItems/PlateBehaviour.cs" />
     <Compile Include="Assets/Scripts/MenuBehaviour.cs" />
-    <Compile Include="Assets/Scripts/Interactables/MapItems/MovingObjectCollision.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -336,6 +336,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>/Users/scottselke/Documents/Unity Editors/2021.3.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
@@ -721,11 +724,17 @@
     <Reference Include="mscorlib">
       <HintPath>/Users/scottselke/Documents/Unity Editors/2021.3.9f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -742,8 +751,20 @@
     <Reference Include="Unity.Timeline">
       <HintPath>Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -759,6 +780,12 @@
     </Reference>
     <Reference Include="Unity.Services.Core">
       <HintPath>Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
