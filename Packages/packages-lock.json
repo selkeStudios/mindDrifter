@@ -100,6 +100,7 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+<<<<<<< HEAD
     "com.unity.visualscripting": {
       "version": "1.7.8",
       "depth": 0,
@@ -110,6 +111,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> main
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
