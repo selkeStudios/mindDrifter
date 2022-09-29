@@ -25,6 +25,9 @@ public class CannonBehaviour : MonoBehaviour, IInteractable
             rb.constraints = RigidbodyConstraints.FreezeAll;
             loaded.transform.parent = transform;
             loaded.transform.localPosition = loadPos;
+
+            //This will shrink the loaded object in order for it to function properly in the scaled down environment
+            loaded.transform.localScale = loaded.transform.localScale / 2;
         }
         else if (other.gameObject.GetComponent<Rigidbody>() && !other.name.Contains(check_))
         {
