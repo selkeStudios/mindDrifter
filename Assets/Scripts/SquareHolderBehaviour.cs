@@ -12,7 +12,7 @@ public class SquareHolderBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag(tag_) && other.gameObject.name.Contains(name_))
+        if (other.gameObject.CompareTag(tag_) && other.gameObject.name.Contains(name_) && obj == null)
         {
             obj = other.gameObject;
             obj.transform.parent = transform.parent;

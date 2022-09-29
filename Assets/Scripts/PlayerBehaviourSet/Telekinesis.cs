@@ -5,17 +5,19 @@ public class Telekinesis : MonoBehaviour
     public Camera cam;
     public GameController gc;
     public MovementBehaviour mb;
+
+    public LayerMask pickupLayer;
+
     private GameObject obj;
     private Rigidbody objRB;
-    public LayerMask pickupLayer;
+
     private Vector3 objPos;
     private float objDist;
     public float minDist = 2;
+
     private Vector3 oldPos;
 
     public float scrollSens = 100;
-
-    private bool objHeld = false;
 
     void Awake()
     {
@@ -28,19 +30,22 @@ public class Telekinesis : MonoBehaviour
     {
         if (mb.canMove)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.V))
             {
-                RaycastHit hit;
-
-                //uses camera position to check for objects in pickup layer, LMB press/hold holds object + release lets go
-                if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100f, pickupLayer))
+                if (obj == null)
                 {
-                    HoldObj(hit.transform.gameObject);
+                    RaycastHit hit;
+
+                    //uses camera position to check for objects in pickup layer, LMB press/hold holds object + release lets go
+                    if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100f, pickupLayer))
+                    {
+                        HoldObj(hit.transform.gameObject);
+                    }
                 }
-            }
-            else if (objHeld && Input.GetMouseButtonUp(0))
-            {
-                DropObj();
+                else
+                {
+                    DropObj();
+                }
             }
 
             if (obj != null)
@@ -79,15 +84,11 @@ public class Telekinesis : MonoBehaviour
         objPos = obj.transform.localPosition;
 
         objRB.constraints = RigidbodyConstraints.FreezeAll;
-
-        objHeld = true;
     }
 
     // resets all the changed components in HoldObj
     void DropObj()
     {
-        objHeld = false;
-
         if (obj.transform.parent == cam.transform)
         {
             obj.transform.parent = null;

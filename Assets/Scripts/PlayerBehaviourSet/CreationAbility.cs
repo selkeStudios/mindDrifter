@@ -24,8 +24,6 @@ public class CreationAbility : MonoBehaviour
     public Vector3 objScale = Vector3.one;
     public Quaternion objRot = Quaternion.identity;
 
-    public bool objHeld = false;
-
     public float scaleSens;
     public float rotSens;
 
@@ -53,29 +51,15 @@ public class CreationAbility : MonoBehaviour
                 SwapObject();
             }
 
-            if (objHeld)
+            if (obj != null)
             {
-                //Mark object as no longer held
-                if (obj.transform.parent != cam.transform)
-                {
-                    objHeld = false;
-                    obj = null;
-                }
-
                 //Drop object
-                if (Input.GetKeyDown(hold))
+                if (Input.GetKeyDown(hold) || obj.transform.parent != cam.transform)
                 {
-                    obj.transform.parent = null;
-                    gc.child[1] = null;
-                    obj = null;
-
-                    objRB.constraints = RigidbodyConstraints.None;
-
-                    objHeld = false;
-
-                    objScale = Vector3.one;
-                    objRot = Quaternion.identity;
+                    DropObj();
                 }
+
+
 
                 if (obj != null)
                 {
@@ -84,7 +68,7 @@ public class CreationAbility : MonoBehaviour
                     obj.transform.localRotation *= objRot;
                 }
             }
-            else if (!objHeld)
+            else
             {
                 //Create object and hold it differently than "usual"
                 if (Input.GetKeyDown(create))
@@ -118,8 +102,22 @@ public class CreationAbility : MonoBehaviour
         obj.transform.localRotation = objRot;
 
         objRB.constraints = RigidbodyConstraints.FreezeAll;
+    }
+    
+    void DropObj()
+    {
+        if (obj.transform.parent == cam.transform)
+        {
+            obj.transform.SetParent(null);
+            objRB.constraints = RigidbodyConstraints.None;
+        }
 
-        objHeld = true;
+        gc.child[1] = null;
+        obj = null;
+        objRB = null;
+
+        objScale = Vector3.one;
+        objRot = Quaternion.identity;
     }
 
     //Changes the item desired (held or palette)
@@ -134,7 +132,7 @@ public class CreationAbility : MonoBehaviour
             selectedShape = 0;
         }
 
-        if (objHeld)
+        if (obj != null)
         {
             Destroy(obj);
 
