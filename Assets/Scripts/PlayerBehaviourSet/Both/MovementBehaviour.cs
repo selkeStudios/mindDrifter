@@ -155,7 +155,24 @@ public class MovementBehaviour : MonoBehaviour
     void Movement()
     {
         //Set speed
-        if (crouched == true && speedCap != crouchSpeed)
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            if (speedCap != sprintSpeed)
+            {
+                speedCap = sprintSpeed;
+            }
+
+            if (jumpOut == jumpTime)
+            {
+                if (jumpTimer > 0)
+                {
+                    jumpTimer /= jumpTime;
+                }
+
+                jumpOut = jumpTime_;
+            }
+        }
+        else if (crouched == true && speedCap != crouchSpeed)
         {
             speedCap = crouchSpeed;
 
@@ -169,21 +186,6 @@ public class MovementBehaviour : MonoBehaviour
                 jumpOut = jumpTime;
             }
             
-        }
-        else if (Input.GetKey(KeyCode.LeftControl) && speedCap != sprintSpeed)
-        {
-            speedCap = sprintSpeed;
-            jumpOut = jumpTime_;
-
-            if (jumpOut == jumpTime)
-            {
-                if (jumpTimer > 0)
-                {
-                    jumpTimer /= jumpTime;
-                }
-
-                jumpOut = jumpTime;
-            }
         }
         else if (speedCap != walkSpeed)
         {
