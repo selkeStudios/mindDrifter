@@ -374,6 +374,7 @@
 "Assets/Scripts/PlayerBehaviourSet/Both/InteractBehaviour.cs"
 "Assets/Scripts/PlayerBehaviourSet/Both/MovementBehaviour.cs"
 "Assets/Scripts/PlayerBehaviourSet/CreationAbility.cs"
+"Assets/Scripts/PlayerBehaviourSet/ModTelekinesis.cs"
 "Assets/Scripts/PlayerBehaviourSet/Telekinesis.cs"
 "Assets/Scripts/ProjectileBehaviour.cs"
 "Assets/Scripts/ReturnBehaviour.cs"
