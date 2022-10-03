@@ -240,6 +240,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   gc: {fileID: 0}
   mb: {fileID: 0}
+  ca: {fileID: 0}
   hold: 118
   modify: 99
   orient: 98
@@ -265,8 +266,8 @@ MonoBehaviour:
   pickupLayer:
     serializedVersion: 2
     m_Bits: 128
-  minDist: 2
-  rotSpeed: 400
+  minDist: 2.5
+  rotSpeed: 600
   moveSpeed: 10
 --- !u!114 &2234970754222483580
 MonoBehaviour:

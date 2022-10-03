@@ -159,22 +159,23 @@ MonoBehaviour:
   - {fileID: 4472819432102882155, guid: 971bff91b62c042458e491fe8f0fbe8c, type: 3}
   - {fileID: 4792919770564384757, guid: 1d8cfb6df56fd8844847c94faf982b37, type: 3}
   - {fileID: 224755005479742838, guid: 8c898260b8ae4924fab955c00f590819, type: 3}
+  created: []
   selectedShape: 0
   mb: {fileID: 0}
   gc: {fileID: 0}
   cam: {fileID: 0}
+  tk: {fileID: 0}
   create: 99
   hold: 118
   changePos: 324
   changeNeg: 323
-  shapeChange: 98
+  destroyShape: 98
   xRot: 308
   zRot: 304
   obj: {fileID: 0}
   objRB: {fileID: 0}
-  up: {x: 0, y: 0, z: 0}
   objPos: {x: 0, y: 0, z: 2}
-  rotSpeed: 400
+  rotSpeed: 600
 --- !u!114 &4679691402288179704
 MonoBehaviour:
   m_ObjectHideFlags: 0

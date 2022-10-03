@@ -8,7 +8,8 @@ public class PlateBehaviour : MonoBehaviour
     private IInteractable ib;
     private MovingObjectBehaviour mb;
 
-    private string co = "CreativeObject";
+    public string co = "CreativeObject";
+    public string ot = "SquarePyramid";
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class PlateBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag(co) && collision.gameObject.name.Contains("SquarePyramid"))
+        if (collision.gameObject.CompareTag(co) && collision.gameObject.name.Contains(ot))
         {
             if (mb != null)
             {
