@@ -240,8 +240,13 @@ MonoBehaviour:
   cam: {fileID: 0}
   gc: {fileID: 0}
   mb: {fileID: 0}
-  grab: 118
+  hold: 118
   modify: 99
+  orient: 98
+  push: 324
+  pull: 323
+  xRot: 308
+  zRot: 304
   objSet:
   - {fileID: 6550030719667669321, guid: fe81240f23c765243bdcb53b70b416cd, type: 3}
   - {fileID: 4472819432102882155, guid: 971bff91b62c042458e491fe8f0fbe8c, type: 3}
@@ -261,7 +266,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   minDist: 2
-  scrollSens: 1
+  rotSpeed: 400
+  moveSpeed: 10
 --- !u!114 &2234970754222483580
 MonoBehaviour:
   m_ObjectHideFlags: 0

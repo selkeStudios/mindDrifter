@@ -1511,6 +1511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Logic
       objectReference: {fileID: 0}
+    - target: {fileID: 2234970754222483566, guid: ebd8401ddb6f5684197b375fa43cd2d5, type: 3}
+      propertyPath: rotSpeed
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd8401ddb6f5684197b375fa43cd2d5, type: 3}
 --- !u!1 &974300427
@@ -4481,6 +4485,10 @@ PrefabInstance:
     - target: {fileID: 4679691402288179682, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
       propertyPath: m_Name
       value: Creative
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679691402288179683, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
+      propertyPath: rotSpeed
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4679691402288179707, guid: 12f815c8e40d9a642b015ceee9e3b654, type: 3}
       propertyPath: m_RootOrder

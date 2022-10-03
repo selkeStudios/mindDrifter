@@ -4,40 +4,45 @@ using UnityEngine;
 
 public class CreationAbility : MonoBehaviour
 {
-    //Array of primitives
+    // Array of primitives
     public GameObject[] shapes;
+    public List<GameObject> created = new List<GameObject>();
     public int selectedShape = 0;
 
     public MovementBehaviour mb;
     public GameController gc;
     public Camera cam;
+    public ModTelekinesis tk;
 
-    //Keycodes
+    // Keycodes
     public KeyCode create = KeyCode.C;
     public KeyCode hold = KeyCode.V;
-    public KeyCode shapeChange = KeyCode.B;
+    public KeyCode changePos = KeyCode.Mouse1;
+    public KeyCode changeNeg = KeyCode.Mouse0;
+    public KeyCode destroyShape = KeyCode.B;
+    public KeyCode xRot = KeyCode.LeftAlt;
+    public KeyCode zRot = KeyCode.LeftShift;
 
-    //Held object data
+    // Held object data
     public GameObject obj;
     public Rigidbody objRB;
     public Vector3 objPos = new Vector3(0, 0, 2);
-    public Vector3 objScale = Vector3.one;
-    public Quaternion objRot = Quaternion.identity;
 
-    public float scaleSens;
-    public float rotSens;
+    public float rotSpeed;
+
+    private int dir;
 
     void Awake()
     {
         mb = GetComponent<MovementBehaviour>();
         gc = FindObjectOfType<GameController>();
         cam = GetComponentInChildren<Camera>();
+        tk = FindObjectOfType<ModTelekinesis>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        objRot = Quaternion.Euler(0, 0, 0);
+        
     }
 
     // Update is called once per frame
@@ -45,39 +50,17 @@ public class CreationAbility : MonoBehaviour
     {
         if (mb.canMove)
         {
-            //Changes the selected object, held or non-existent (yet)
-            if (Input.GetKeyDown(shapeChange))
+            dir = (Input.GetKeyDown(changePos) ? 1 : 0) + (Input.GetKeyDown(changeNeg) ? -1 : 0);
+            // Changes the selected object, held or non-existent (yet)
+            if (dir != 0)
             {
                 SwapObject();
             }
 
-            if (obj != null)
+            // Pickup object
+            if (Input.GetKeyDown(hold))
             {
-                //Drop object
-                if (Input.GetKeyDown(hold) || obj.transform.parent != cam.transform)
-                {
-                    DropObj();
-                }
-
-
-
-                if (obj != null)
-                {
-                    //Rotate object left and right
-                    objRot = Quaternion.Euler(0, Input.mouseScrollDelta.y * scaleSens, 0);
-                    obj.transform.localRotation *= objRot;
-                }
-            }
-            else
-            {
-                //Create object and hold it differently than "usual"
-                if (Input.GetKeyDown(create))
-                {
-                    HoldObj(Instantiate(shapes[selectedShape]));
-                }
-
-                //Pickup object
-                if (Input.GetKeyDown(hold))
+                if (obj == null)
                 {
                     RaycastHit hit;
 
@@ -86,57 +69,132 @@ public class CreationAbility : MonoBehaviour
                         HoldObj(hit.collider.gameObject);
                     }
                 }
+                else
+                {
+                    DropObj();
+                }
+            }
+
+            // Destroy object
+            if (Input.GetKeyDown(destroyShape) && created.Count > 0)
+            {
+                if (obj != null)
+                {
+                    DestroyObj(obj);
+                }
+                else
+                {
+                    DestroyObj(created[created.Count - 1]);
+                }
+            }
+
+            if (obj != null)
+            {
+                // Rotate object
+                if (obj.transform.parent == cam.transform)
+                {
+                    RotateObj();
+                }
+                else
+                {
+                    DropObj();
+                }
+            }
+            else
+            {
+                // Create object and hold it differently than "usual"
+                if (Input.GetKeyDown(create))
+                {
+                    HoldObj(Instantiate(shapes[selectedShape]));
+                    created.Add(obj);
+                }
             }
         }
     }
 
-    //Does the work to "hold an object"
+    // Does the work to "hold an object"
     void HoldObj(GameObject obj_)
     {
         obj = obj_.gameObject;
         gc.child[1] = obj;
         objRB = obj.GetComponent<Rigidbody>();
-        obj.transform.SetParent(cam.transform);
+        obj.transform.parent = cam.transform;
 
         obj.transform.localPosition = objPos;
-        obj.transform.localRotation = objRot;
 
         objRB.constraints = RigidbodyConstraints.FreezeAll;
     }
     
+    // Drop object
     void DropObj()
     {
         if (obj.transform.parent == cam.transform)
         {
-            obj.transform.SetParent(null);
+            obj.transform.parent = null;
             objRB.constraints = RigidbodyConstraints.None;
         }
 
         gc.child[1] = null;
         obj = null;
         objRB = null;
-
-        objScale = Vector3.one;
-        objRot = Quaternion.identity;
     }
 
-    //Changes the item desired (held or palette)
-    void SwapObject()
+    // Rotates the object
+    void RotateObj()
     {
-        if (selectedShape < shapes.Length - 1)
+        Vector3 dir_;
+
+        if (Input.GetKey(xRot))
         {
-            selectedShape++;
+            dir_ = cam.transform.right;
+        }
+        else if (Input.GetKey(zRot))
+        {
+            dir_ = cam.transform.forward;
         }
         else
         {
+            dir_ = cam.transform.up;
+        }
+
+        obj.transform.Rotate(dir_, rotSpeed * Time.deltaTime * Input.mouseScrollDelta.y, Space.World);
+    }
+
+    private int index;
+
+    // Changes the item desired (held or palette)
+    void SwapObject()
+    {
+        selectedShape += dir;
+
+        if (selectedShape >= shapes.Length)
+        {
             selectedShape = 0;
+        }
+        else if (selectedShape < 0)
+        {
+            selectedShape = shapes.Length - 1;
         }
 
         if (obj != null)
         {
+            index = created.IndexOf(obj);
+            created.Remove(obj);
             Destroy(obj);
-
             HoldObj(Instantiate(shapes[selectedShape]));
+            created.Insert(index, obj);
         }
+    }
+
+    // Properly destroys created objects
+    void DestroyObj(GameObject obj_)
+    {
+        if (obj_ == obj)
+        {
+            DropObj();
+        }
+
+        created.Remove(obj_);
+        Destroy(obj_);
     }
 }

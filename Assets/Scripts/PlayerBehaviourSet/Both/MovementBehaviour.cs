@@ -116,7 +116,7 @@ public class MovementBehaviour : MonoBehaviour
         }
     }
 
-    float xRotation;
+    private float xRotation = 0;
 
     /// <summary>
     /// Controls the camera
