@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\ProjectileBehaviour.cs" />
     <Compile Include="Assets\Scripts\Unused\CameraScript.cs" />
     <Compile Include="Assets\Scripts\MenuBehaviour.cs" />
+    <Compile Include="Assets\Scripts\DividerBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

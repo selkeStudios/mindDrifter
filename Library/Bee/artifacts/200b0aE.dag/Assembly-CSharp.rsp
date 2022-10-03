@@ -352,6 +352,7 @@
 "Assets/mesh.cs"
 "Assets/Scripts/CheckpointBehaviour.cs"
 "Assets/Scripts/CheckpointManager.cs"
+"Assets/Scripts/DividerBehaviour.cs"
 "Assets/Scripts/GameController.cs"
 "Assets/Scripts/GameEnd.cs"
 "Assets/Scripts/Interactables/Dialogue/Dialogue.cs"
