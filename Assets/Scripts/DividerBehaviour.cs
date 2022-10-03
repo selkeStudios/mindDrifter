@@ -12,7 +12,6 @@ public class DividerBehaviour : MonoBehaviour
 
         if (!other.gameObject.CompareTag(tag_))
         {
-            print("reversed");
             rb.velocity = -rb.velocity;
         }
     }
