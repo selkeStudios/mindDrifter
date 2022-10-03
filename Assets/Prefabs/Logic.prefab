@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 3594486966279727637}
   - component: {fileID: 3594486966279727629}
   - component: {fileID: 3594486966279727631}
+  - component: {fileID: 8316446729067530882}
   - component: {fileID: 3594486966279727627}
   - component: {fileID: 3594486966279727628}
   m_Layer: 0
@@ -226,6 +227,50 @@ MonoBehaviour:
   standOffset: {x: 0, y: 0.5369999, z: 0}
   crouchOffset: {x: 0, y: 0, z: 0}
   camOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &8316446729067530882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3594486966279727636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de139bf6f3ce4444e915722e7c3837a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  gc: {fileID: 0}
+  mb: {fileID: 0}
+  ca: {fileID: 0}
+  hold: 118
+  modify: 99
+  orient: 98
+  push: 324
+  pull: 323
+  xRot: 308
+  zRot: 304
+  objSet:
+  - {fileID: 6550030719667669321, guid: fe81240f23c765243bdcb53b70b416cd, type: 3}
+  - {fileID: 4472819432102882155, guid: 971bff91b62c042458e491fe8f0fbe8c, type: 3}
+  - {fileID: 4792919770564384757, guid: 1d8cfb6df56fd8844847c94faf982b37, type: 3}
+  - {fileID: 224755005479742838, guid: 8c898260b8ae4924fab955c00f590819, type: 3}
+  objMods:
+  - {fileID: 0}
+  - {fileID: 682591047139381278, guid: c55b8b0e7d5bcdc4c8969f3253e0b7f4, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  objs:
+  - SquarePyramid
+  - Cube
+  - Cylinder
+  - Sphere
+  pickupLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  minDist: 2.5
+  rotSpeed: 600
+  moveSpeed: 10
 --- !u!114 &3594486966279727627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  gc: {fileID: 0}
+  mb: {fileID: 0}
   pickupLayer:
     serializedVersion: 2
     m_Bits: 128

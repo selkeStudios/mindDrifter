@@ -174,7 +174,7 @@ MonoBehaviour:
   zRot: 304
   obj: {fileID: 0}
   objRB: {fileID: 0}
-  objPos: {x: 0, y: 0, z: 2}
+  objPos: {x: 0, y: 0, z: 2.5}
   rotSpeed: 600
 --- !u!114 &4679691402288179704
 MonoBehaviour:

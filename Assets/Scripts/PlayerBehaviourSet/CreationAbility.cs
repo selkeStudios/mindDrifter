@@ -7,12 +7,13 @@ public class CreationAbility : MonoBehaviour
     // Array of primitives
     public GameObject[] shapes;
     public List<GameObject> created = new List<GameObject>();
+    public int shapeCap = 4;
     public int selectedShape = 0;
 
-    public MovementBehaviour mb;
-    public GameController gc;
-    public Camera cam;
-    public ModTelekinesis tk;
+    private MovementBehaviour mb;
+    private GameController gc;
+    private Camera cam;
+    private ModTelekinesis tk;
 
     // Keycodes
     public KeyCode create = KeyCode.C;
