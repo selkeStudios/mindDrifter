@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Interactables\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviourSet\Both\CollisionBehaviour.cs" />
     <Compile Include="Assets\Scripts\Unused\P1BoxBehaviour.cs" />
+    <Compile Include="Assets\Scripts\DividerBehaviour.cs" />
     <Compile Include="Assets\Scripts\ReturnBehaviour.cs" />
     <Compile Include="Assets\Scripts\Interactables\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviourSet\ModTelekinesis.cs" />
@@ -93,7 +94,6 @@
     <Compile Include="Assets\Scripts\ProjectileBehaviour.cs" />
     <Compile Include="Assets\Scripts\Unused\CameraScript.cs" />
     <Compile Include="Assets\Scripts\MenuBehaviour.cs" />
-    <Compile Include="Assets\Scripts\DividerBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
